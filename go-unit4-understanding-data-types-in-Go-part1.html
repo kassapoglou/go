@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Μαθαίνω Δωρεάν Go Προγραμματισμό</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line σεμιναρίων στην γλώσσα προγραμματισμού Go"> 
+    <meta name="robots" content="index, follow">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="go_style.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150900548-1');
+</script>
+
+</head>
+<body class="single-blog-post">
+    <div class="page-header">
+           <header class="site-header">
+            <div class="top-header-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                            <div class="header-bar-email d-flex align-items-center">
+                                <i class="fa fa-envelope"></i><a href="#">michail.kassapoglou@gmail.com</a>
+                            </div><!-- .header-bar-email -->
+
+                            <div class="header-bar-text lg-flex align-items-center">
+                              <!--  <p><i class="fa fa-phone"></i>001-1234-88888 </p> -->
+                            </div><!-- .header-bar-text -->
+                        </div><!-- .col -->
+
+                        <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                            <div class="header-bar-search">
+                                <form class="flex align-items-stretch">
+                                 <!--   <input type="search" placeholder="What would you like to learn?"> -->
+                                 <!--   <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button> -->
+                                </form>
+                            </div><!-- .header-bar-search -->
+
+                            <div class="header-bar-menu">
+                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
+                                  <!--  <li><a href="#">Register</a></li> -->
+                                <!--    <li><a href="#">Login</a></li> -->
+                                </ul>
+                            </div><!-- .header-bar-menu -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                 </div>   <!-- .container-fluid -->
+            </div><!-- .top-header-bar -->
+
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-3">
+                            <div class="site-branding">
+                                <h1 class="site-title"><a href="https://kassapoglou.github.io/main/" rel="home">Kassa<span>poglou</span></a></h1>
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
+
+                        <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                            <nav class="site-navigation flex justify-content-end align-items-center">
+                                <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                    <li class="current-menu-item"><a href="index.html">Home</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main">Home</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main/contact.html">Contact</a></li>
+                                </ul>
+
+                                <div class="hamburger-menu d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div><!-- .hamburger-menu -->
+
+                               
+                            </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+
+        <div class="page-header-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <header class="entry-header">
+                            <h1 class="entry-title">ΕΝΟΤΗΤΑ 4 GO - Understanding Data Types in GO (PART 1)</h1>
+
+                            <div class="entry-meta flex justify-content-center align-items-center">
+                                <div class="post-author"><a href="#">Michail Kassapoglou </a></div>
+
+                              <!--  <div class="post-comments"><a href="#">02 Comments</a></div> -->
+                            </div><!-- .entry-meta -->
+                        </header><!-- .entry-header -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .page-header-overlay -->
+    </div><!-- .page-header -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-10">
+                <div class="featured-image">
+                  <!--  <img src="images/single-post.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια PYTHON"> -->
+
+                    <div class="posted-date position-absolute">
+                        <div class="day">25</div>
+                        <div class="month">Feb</div>
+                    </div><!-- .posted-date -->
+                </div><!-- .featured-image -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-1" style="height:0">
+                <div class="post-share">
+                   
+
+                  
+                </div><!-- .post-share -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-12">
+                <div class="single-post-wrap">
+                   
+                </div><!-- .single-post-wrap -->
+
+                <p><h3>ΔΩΡΕΑΝ ΜΑΘΗΜΑΤΑ GO</h3></p>
+                <img src="images/Golang.png" alt="Δωρεάν Μαθήματα και Σεμινάρια GO" class="center">
+                <p></p>
+
+<p>Στο σημερινό δωρεάν μάθημα προγραμματισμού GO, θα δούμε τα διάφορα data types 
+(είδη δεδομένων) που υποστηρίζει η συγκεκριμένη γλώσσα όπως και πως ορίζουμε constants – 
+δηλαδή μεταβλητές η τιμή τους δεν μπορεί να αλλάξει μετά από την πρώτη ανάθεση τιμής. 
+Επίσης θα δούμε τι σημαίνει το scope και πως επηρεάζει την πρόσβαση στης μεταβλητές. 
+Επειδή η κάλυψη όλων αυτών των θεμάτων είναι αρκετά μεγάλη, θα την χωρίσουμε σε δύο μέρη. </p>
+
+<p>Γενικότερα, τα data types βοηθάνε τον compiler της Go να αποφασίσει τι είδους πράξεις μπορεί να εκτελέσει στα 
+δεδομένα. Αν, για παράδειγμα, έχουμε ορίσει δύο αριθμούς να είναι ακέραιοι τότε ο compiler μπορεί εφόσον 
+δηλωθεί να εκτελέσει την αριθμητική πράξη της πρόσθεσης, ενώ ανάμεσα σε δύο μεταβλητές έχουν οριστεί σαν 
+strings τότε δεν υφίσταται η πράξη της πρόσθεσης.</p>
+
+<p>Θα διαβάσετε στο documentation της Go ή σε διάφορα άρθρα από το Ίντερνετ ότι 
+η Go είναι στην κατηγορία των <strong>statically typed languages</strong>. Αυτό σημαίνει ότι ο compiler της 
+Go, κατά την ανάπτυξη του κώδικα μας, πριν ακόμα τον τρέξουμε, αν δει ότι κάποιες μεταβλητές 
+χρησιμοποιούν με λάθος τρόπο το data type των τιμών τους τότε θα παραπονεθεί. Επίσης, από την 
+στιγμή που ορίσουμε ένα data type σε μια μεταβλητή, αυτό δεν μπορεί να αλλάξει.</p>
+
+<p>Η Go υποστηρίζει αρκετά διαφορετικά είδη δεδομένων. Όσον αφορά τους ακέραιους αριθμούς, 
+ο πιο συνηθισμένος τύπος αριθμών είναι το <strong>int</strong> ενώ για τους δεκαδικούς είναι 
+το <strong>float64</strong>. Η Go έχει και πιο ειδικές περιπτώσεις αριθμών αν θέλαμε να 
+χρησιμοποιήσουμε ένα συγκεκριμένο αριθμό bits για να εξοικονομήσουμε μνήμη. Για παράδειγμα, υπάρχει και 
+το data type <strong>int8</strong> όπως και το <strong>int16</strong>, <strong>int32</strong> και <strong>int64</strong>. 
+Ενώ για τους δεκαδικούς έχουμε την επιλογή ανάμεσα σε <strong>float32</strong> και <strong>float64</strong>. 
+</p>
+
+<p>Ο παρακάτω πίνακας είναι μια αναλυτική λίστα με όλα τα data types.</p>
+
+<p><strong>Integer Types</strong></p>
+<img src="go-unit4/go-unit4-1.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια GO" class="center">
+<p></p>
+
+<p><strong>Float and Complex Numbers</strong></p>
+<img src="go-unit4/go-unit4-2.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια GO" class="center">
+<p></p>
+
+<p>Πριν δούμε μερικά απλά παραδείγματα με μεταβλητές που ορίζουν αριθμητικά data types, 
+θα πρέπει να γνωρίζουμε ότι η Go υποστηρίζει τις εξής αριθμητικές πράξεις:</p>
+<ul>
+    <li>πρόσθεση – με το σύμβολο ( + )</li>
+    <li>αφαίρεση – με το σύμβολο ( - )</li>
+    <li>πολλαπλασιασμό – με το σύμβολο ( * )</li>
+    <li>διαίρεση – με το σύμβολο ( / )</li>
+    <li>υπόλοιπο διαίρεσης – με το σύμβολο ( %)</li>
+</ul>
+
+<p>Ας δούμε ένα απλό πρόγραμμα που χρησιμοποιεί και τις πέντε αριθμητικές πράξεις 
+αφού έχουν οριστεί σωστά τα data types των μεταβλητών.</p>
+
+<p>Μπορείτε να δημιουργήσετε έναν καινούργιο φάκελο με το όνομα unit4 κάτω 
+από το src για να γράψετε τα παραδείγματα αυτής της ενότητας.</p>
+
+<p><strong>main.go</strong></p>
+ <pre class="prettyprint">
+    package main
+
+    import "fmt"
+    
+    func main() {
+        var x = 5
+        var y = 10
+        fmt.Println("Addition:", y+x)
+        fmt.Println("Subtraction:", y-x)
+        fmt.Println("Multiplication:", y*x)
+        fmt.Println("Division:", y/x)
+        fmt.Println("Remainder:", y%x)
+    }
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    Addition: 15
+    Subtraction: 5
+    Multiplication: 50
+    Division: 2
+    Remainder: 0
+         </pre> 
+
+<p>Ας κάνουμε μια μικρή αλλαγή στο πρόγραμμα αντικαθιστώντας τον ακέραιο αριθμό 10 με τον δεκαδικό αριθμό 10.0</p>
+
+<p><strong>main.go</strong></p>
+ <pre class="prettyprint">
+    package main
+
+    import "fmt"
+    
+    func main() {
+        var x = 5
+        var y = 10.0
+        fmt.Println("Addition:", y+x)
+        fmt.Println("Subtraction:", y-x)
+        fmt.Println("Multiplication:", y*x)
+        fmt.Println("Division:", y/x)
+        fmt.Println("Remainder:", y%x)
+    }
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    src\unit4\main.go:8:28: invalid operation: y + x (mismatched types float64 and int)
+    src\unit4\main.go:9:31: invalid operation: y - x (mismatched types float64 and int)
+    src\unit4\main.go:10:34: invalid operation: y * x (mismatched types float64 and int)
+    src\unit4\main.go:11:28: invalid operation: y / x (mismatched types float64 and int)
+    src\unit4\main.go:12:29: invalid operation: y % x (mismatched types float64 and int)
+         </pre>
+
+<p>Έχετε καταλάβει ποιο είναι το πρόβλημα? Η Go δεν μπορεί να μετατρέπει ένα data 
+type σε κάποιο άλλο αυτόματα για να ικανοποιήσει την αριθμητική πράξη. Οπότε αρνείται 
+στην ουσία να προάγει στον ακέραιο 5 σε δεκαδικό 5.0 έτσι ώστε να εκτελέσει χωρίς λάθος 
+τις πράξεις. Αυτή την ευθύνη την αφήνει στον προγραμματιστή. Οπότε αυτό που έχουμε να 
+κάνουμε είναι να μετατρέψουμε τον ακέραιο αριθμό σε δεκαδικό προσθέτοντας το καινούργιο 
+data type μπροστά από τον αριθμό, και τον ίδιο τον αριθμό τον βάζουμε σε παρένθεση. Φυσικά 
+θα ήταν πιο εύκολο για εμάς απλά να το γράφαμε σαν δεκαδικό, αλλά αν αντί για τον αριθμό 5 
+είχαμε μια μεταβλητή, ο τρόπος να την μετατρέψουμε θα ήταν αυτός. Προσπαθούμε λοιπόν να 
+τρέξουμε το πρόγραμμα μας ακόμα μια φορά.</p>
+
+<p><strong>main.go</strong></p>
+ <pre class="prettyprint">
+    package main
+
+    import (
+        "fmt"
+    )
+    
+    func main() {
+        var x = float64(5)
+        var y = 10.0
+        fmt.Println("Addition:", y+x)
+        fmt.Println("Subtraction:", y-x)
+        fmt.Println("Multiplication:", y*x)
+        fmt.Println("Division:", y/x)
+        fmt.Println("Remainder:", y%x)
+    
+    
+    }
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    src\unit4\main.go:14:29: invalid operation: y % x (operator % not defined on float64)
+         </pre>
+
+<p>Τώρα βρισκόμαστε μπροστά σε ένα καινούργιο πρόβλημα – το υπόλοιπο της διαίρεσης 
+λειτουργεί μόνο ανάμεσα σε ακέραιους αριθμούς. Για να μπορέσουμε να υπολογίσουμε το υπόλοιπο 
+ανάμεσα σε δεκαδικούς θα πρέπει να χρησιμοποιήσουμε το function <strong>Mod( )</strong> που ανήκει στο 
+πακέτο <strong>math</strong>. Οπότε προσθέτουμε το πακέτο <strong>math</strong> στο <strong>import</strong> 
+κάτω από το <strong>fmt</strong>, και μετά χρησιμοποιούμε την function <strong>Mod</strong>.</p>
+
+<p><strong>main.go</strong></p>
+ <pre class="prettyprint">
+    package main
+
+    import (
+        "fmt"
+        "math"
+    )
+    
+    func main() {
+        var x = float64(5)
+        var y = 10.0
+        fmt.Println("Addition:", y+x)
+        fmt.Println("Subtraction:", y-x)
+        fmt.Println("Multiplication:", y*x)
+        fmt.Println("Division:", y/x)
+        fmt.Println("Remainder:", math.Mod(y, x))
+    
+    }
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    Output
+    Addition: 15
+    Subtraction: 5
+    Multiplication: 50
+    Division: 2
+    Remainder: 0
+         </pre>
+
+<p>Τώρα το αποτέλεσμα είναι το σωστό. Όπως βλέπετε έπρεπε να κάνουμε δύο πολύ μικρές 
+αλλαγές στον κώδικα για να λειτουργήσει σωστά.</p>
+
+<p>Η Go μας προσφέρει μερικούς εύχρηστους τρόπους για να ορίσουμε πολλαπλές μεταβλητές. 
+Ο πρώτος τρόπος είναι να ορίσουμε τις μεταβλητές στην ίδια γραμμή διαχωρίζοντας την μια από την 
+άλλη με κόμμα. Την ίδια τακτική πρέπει να ακολουθήσουμε και στις τιμές τις οποίες θα τις αναθέσουμε. 
+Ας δούμε ένα απλό παράδειγμα.</p>
+
+<p><strong>main.go</strong></p>
+ <pre class="prettyprint">
+    package main
+
+    import (
+        "fmt"
+    )
+    
+    func main() {
+        flightNumber, destination, cost := "A567", "Rome", 150
+        fmt.Println("Your flight number is", flightNumber, "with destination to", destination, "and final cost", cost)
+    }
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    Your flight number is A567 with destination to Rome and final cost 150
+         </pre>
+
+<p>Θα μπορούσαμε, σαν δεύτερη εναλλακτική, να ορίσουμε τις μεταβλητές και ως εξής:</p>
+
+<p><strong>main.go</strong></p>
+ <pre class="prettyprint">
+    package main
+
+    import (
+        "fmt"
+    )
+    
+    var (
+        flightNumber = "A567"
+        destination  = "Rome"
+        cost         = 150
+    )
+    
+    func main() {
+        fmt.Println("Your flight number is", flightNumber, "with destination to", destination, "and final cost", cost)
+    }
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    Your flight number is A567 with destination to Rome and final cost 150
+         </pre>
+
+<p>Στο επόμενο δωρεάν μάθημα σε Go, θα ολοκληρώσουμε την αναφορά μας στα Data types.</p>
+
+                
+                    <a><a href="https://kassapoglou.github.io/go/go-programming.html"><font color="#0000CC">Πίσω στις ενότητες GO Programming</font> </a></a>
+                
+           
+
+                <div class="author-box">
+                    <div class="author-info flex flex-wrap">
+                        <div class="author-avatar">
+                            <img src="images/michail.jpg" alt="Michail Kassapoglou">
+
+                           
+                        </div><!-- .author-avatar -->
+
+                        <div class="author-details">
+                            <h3 class="author-name">Michail Kassapoglou <span>Admin</span></h3>
+
+                            <div class="entry-content mt-3">
+                                <p>Γεια σας, είμαι ο Μιχάλης Κασάπογλου και θα σας διδάξω με τον ποιο απλό 
+                                  τρόπο να προγραμματίζετε σε Python. Ασχολούμαι με την τεχνική εκπαίδευση 
+                                    σε διάφορες πλατφόρμες, λειτουργικά συστήματα και γλώσσες προγραμματισμού 
+                                    πάνω από 20 έτη. Κατέχω έναν αρκετά μεγάλο αριθμό πιστοποιήσεων
+                                    και σαν Τraining Lead στην Intrasoft έχω την δυνατότητα να αναβαθμίζω συνεχώς 
+                                    τις γνώσεις μου και να έχω άμεση επαφή με αληθινά projects και εξειδικευμένες μεθόδους 
+                                    ανάπτυξης εφαρμογών που έχουν υψηλές απαιτήσεις.  
+                                    Για τυχόν ερωτήσεις σας μπορείτε να επικοινωνήσετε μαζί μου 
+                                    στο <font color="#0000CC">Michail.Kassapoglou@gmail.com </font></p>
+                                    <p>   Σας ευχαριστώ που επισκεφτήκατε τα δωρεάν μαθήματα προγραμματισμού GO.</p>
+                            </div><!-- .entry-content -->
+                        </div><!-- .author-details -->
+                    </div><!-- .author-info -->
+                </div><!-- .author-box -->
+
+                
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+
+ 
+
+  
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+</html>
