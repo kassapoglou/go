@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Μαθαίνω Δωρεάν Go Προγραμματισμό</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line σεμιναρίων στην γλώσσα προγραμματισμού Go"> 
+    <meta name="robots" content="index, follow">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="go_style.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150900548-1');
+</script>
+
+</head>
+<body class="single-blog-post">
+    <div class="page-header">
+           <header class="site-header">
+            <div class="top-header-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                            <div class="header-bar-email d-flex align-items-center">
+                                <i class="fa fa-envelope"></i><a href="#">michail.kassapoglou@gmail.com</a>
+                            </div><!-- .header-bar-email -->
+
+                            <div class="header-bar-text lg-flex align-items-center">
+                              <!--  <p><i class="fa fa-phone"></i>001-1234-88888 </p> -->
+                            </div><!-- .header-bar-text -->
+                        </div><!-- .col -->
+
+                        <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                            <div class="header-bar-search">
+                                <form class="flex align-items-stretch">
+                                 <!--   <input type="search" placeholder="What would you like to learn?"> -->
+                                 <!--   <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button> -->
+                                </form>
+                            </div><!-- .header-bar-search -->
+
+                            <div class="header-bar-menu">
+                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
+                                  <!--  <li><a href="#">Register</a></li> -->
+                                <!--    <li><a href="#">Login</a></li> -->
+                                </ul>
+                            </div><!-- .header-bar-menu -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                 </div>   <!-- .container-fluid -->
+            </div><!-- .top-header-bar -->
+
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-3">
+                            <div class="site-branding">
+                                <h1 class="site-title"><a href="https://kassapoglou.github.io/main/" rel="home">Kassa<span>poglou</span></a></h1>
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
+
+                        <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                            <nav class="site-navigation flex justify-content-end align-items-center">
+                                <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                    <li class="current-menu-item"><a href="index.html">Home</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main">Home</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main/contact.html">Contact</a></li>
+                                </ul>
+
+                                <div class="hamburger-menu d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div><!-- .hamburger-menu -->
+
+                               
+                            </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+
+        <div class="page-header-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <header class="entry-header">
+                            <h1 class="entry-title">ΕΝΟΤΗΤΑ 5 GO - Understanding Data Types in GO (PART 2)</h1>
+
+                            <div class="entry-meta flex justify-content-center align-items-center">
+                                <div class="post-author"><a href="#">Michail Kassapoglou </a></div>
+
+                              <!--  <div class="post-comments"><a href="#">02 Comments</a></div> -->
+                            </div><!-- .entry-meta -->
+                        </header><!-- .entry-header -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .page-header-overlay -->
+    </div><!-- .page-header -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-10">
+                <div class="featured-image">
+                  <!--  <img src="images/single-post.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια PYTHON"> -->
+
+                    <div class="posted-date position-absolute">
+                        <div class="day">06</div>
+                        <div class="month">Mar</div>
+                    </div><!-- .posted-date -->
+                </div><!-- .featured-image -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-1" style="height:0">
+                <div class="post-share">
+                   
+
+                  
+                </div><!-- .post-share -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-12">
+                <div class="single-post-wrap">
+                   
+                </div><!-- .single-post-wrap -->
+
+                <p><h3>ΔΩΡΕΑΝ ΜΑΘΗΜΑΤΑ GO</h3></p>
+                <img src="images/Golang.png" alt="Δωρεάν Μαθήματα και Σεμινάρια GO" class="center">
+                <p></p>
+
+<p>Στο σημερινό δωρεάν μάθημα προγραμματισμού GO (part 2), θα συνεχίσουμε 
+να εξερευνούμε τα διάφορα data types (είδη δεδομένων) που υποστηρίζει η συγκεκριμένη 
+γλώσσα όπως και πως ορίζουμε constants – δηλαδή μεταβλητές που η τιμή τους δεν 
+μπορεί να αλλάξει μετά από την πρώτη ανάθεση τιμής. Επίσης θα δούμε τι σημαίνει 
+το scope και πως επηρεάζει την πρόσβαση στις μεταβλητές. Επειδή η κάλυψη όλων 
+αυτών των θεμάτων είναι αρκετά μεγάλη, την είχαμε χωρίσει σε δύο μέρη. Αυτό 
+είναι το δεύτερο και τελευταίο μέρος.</p>
+
+<p>Όπως ήδη έχουμε αναφέρει, μια σειρά από χαρακτήρες ονομάζονται <strong>strings</strong>. 
+Για να αναθέσουμε ένα string σε μια μεταβλητή χρησιμοποιούμε τα double quotes <strong>“ “</strong>
+όπως κάναμε και στα παραδείγματα μας στην προηγούμενη ενότητα. Αν και θα μιλήσουμε 
+περισσότερο αργότερα για τις δυνατότητες που μας προσφέρει η GO σε σχέση με τα strings, 
+ας δούμε ένα απλό παράδειγμα που μας δείχνει πως να παίρνουμε κάποιες χρήσιμες 
+πληροφορίες από τα strings.</p>
+
+<p><strong>main.go</strong></p>
+ <pre class="prettyprint">
+    package main
+
+    import (
+        "fmt"
+    )
+    
+    func main() {
+        fmt.Println(len("Michail Kassapoglou"))
+        fmt.Println("Michail Kassapoglou"[1])
+        fmt.Println("Michail, " + "Kassapoglou")
+    }
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    19
+    105
+    Michail, Kassapoglou
+         </pre> 
+
+<p>Ας αναλύσουμε το output και ας εξηγήσουμε γιατί βλέπουμε τους 
+αριθμούς 19 και 105. Στο πρώτο Println( ) χρησιμοποιούμε την <strong>len( )</strong> 
+function της GO να μας πει ποιος είναι ο ολικός αριθμός χαρακτήρων που περιέχονται 
+μέσα στα “ ”. Αυτό συμπεριλαμβάνει και τυχόν κενό ή κενά που βρίσκονται ανάμεσα 
+στους χαρακτήρες. Στο πρώτο Println( ) λοιπόν έχουμε 18 χαρακτήρες και ένα κενό 
+ανάμεσα στα δύο ονόματα. Οπότε το σύνολο πολύ σωστά μας δίνεται σαν 19.</p>
+
+<p>Στο δεύτερο Println( ) θέλουμε να βρούμε ποιος είναι ο χαρακτήρας στην θέση 1 
+του string. Έχει ανατεθεί σε κάθε string χαρακτήρα, εσωτερικά από την GO, ένας integer 
+αριθμός που ονομάζεται <strong>index</strong>. Η αρίθμηση του index ξεκινάει από το 0 
+και όχι από το 1. Οπότε στο δικό μας παράδειγμα ζητάμε να βρούμε ποιος είναι ο χαρακτήρας 
+που βρίσκεται στην θέση [1] του string. Λογικά θα περιμέναμε να δούμε το i, 
+όμως το output είναι 105. Βασικά το 105 είναι η byte αντιπροσώπευση του 
+χαρακτήρα i οπότε το αποτέλεσμα είναι σωστό.</p>
+
+<p>Στο τελευταίο Println( ) δείχνουμε ότι όταν χρησιμοποιούμε το σύμβολο της 
+πρόσθεσης με δύο strings ,επειδή είναι πρακτικά αδύνατον να προστεθούν αλγεβρικά τα 
+strings, η GO αντί για πρόσθεση χρησιμοποιεί <strong>concatenation</strong> που στην ουσία 
+πάει και “κολλάει” το ένα string δίπλα στο άλλο. </p>
+
+<p>Ένα ακόμα χρήσιμο data type που υπάρχει σε όλες τις γλώσσες προγραμματισμού 
+είναι το Boolean Type. Μια μεταβλητή που ορίζεται σαν Boolean μπορεί να πάρει 
+μια από τις δύο τιμές – true ή false. Εάν δεν ορίσουμε εμείς κάποια αρχική τιμή 
+τότε η τιμή της μεταβλητής θα είναι false. Για να ορίσουμε μια μεταβλητή σαν 
+boolean χρησιμοποιούμε την λέξη bool.</p>
+
+<p><strong>main.go</strong></p>
+ <pre class="prettyprint">
+    package main
+
+    import (
+        "fmt"
+    )
+    
+    func main() {
+        var b bool
+        fmt.Println(b)
+    }
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    false
+         </pre> 
+
+<p>Ας δούμε ένα ακόμα ένα παράδειγμα που χρησιμοποιεί boolean μεταβλητή.</p>
+
+<p><strong>main.go</strong></p>
+ <pre class="prettyprint">
+    package main
+
+    import (
+        "fmt"
+    )
+    
+    func main() {
+        var b bool
+        fmt.Println(b)
+         b = true
+         fmt.Println(b)
+    }
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    false
+    true
+         </pre> 
+
+<p>Υπάρχει τρόπος να μπορούμε να ελέγξουμε το data type της μεταβλητής? 
+Ναι υπάρχει με την χρήση ενός πακέτου που ονομάζεται <strong>reflect</strong>. 
+Ας δούμε ένα παράδειγμα όπου αναθέτουμε διαφορετικά είδη τιμών σε μερικές μεταβλητές και 
+μετά ζητάμε να δούμε το data type των μεταβλητών.</p>
+
+<p><strong>main.go</strong></p>
+ <pre class="prettyprint">
+    package main
+
+    import (
+        "fmt"
+        "reflect"
+    )
+    
+    func main() {
+        var s string = "string"
+        var i int = 10
+        var f float32 = 1.2
+        
+        fmt.Println(reflect.TypeOf(s))
+        fmt.Println(reflect.TypeOf(i))
+        fmt.Println(reflect.TypeOf(f))
+    }
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    string
+    int
+    float32
+         </pre> 
+
+<p>Μια λίγο πιο δύσκολη αλλά πολύ χρήσιμη διαδικασία είναι εκείνη της 
+μετατροπής ενός data type σε ένα άλλο. Μια τέτοια πράξη ίσως είναι απαραίτητη 
+όταν δεχόμαστε πολλαπλά δεδομένα από μια βάση και θέλουμε τα στοιχεία να τα 
+μετατρέψουμε έτσι ώστε να μπορέσει η GO να τα διαχειριστεί κατάλληλα. Για 
+να το καταφέρουμε αυτό, πρέπει να χρησιμοποιήσουμε ένα διαφορετικό πακέτο 
+με το όνομα strconv. Το συγκεκριμένο πακέτο προσφέρει πολλές μεθόδους για 
+να καλύψει όλες τις περιπτώσεις μετατροπής από ένα data type σε ένα άλλο. 
+Ας δούμε ένα απλό παράδειγμα.</p>
+
+<p><strong>main.go</strong></p>
+ <pre class="prettyprint">
+    package main
+
+    import (
+        "fmt"
+        "reflect"
+        "strconv"
+    )
+    
+    func main() {
+        var a int = 3
+        fmt.Println(reflect.TypeOf(a))
+        fmt.Println(a)
+        var b = strconv.Itoa(a)
+        fmt.Println(reflect.TypeOf(b))
+        fmt.Println(b)
+    }
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    int
+    3
+    string
+    3
+         </pre> 
+
+<p>Τώρα που είμαστε αρκετά εξοικειωμένοι με τις μεταβλητές και τα data 
+types στην Go, μπορούμε να αναφερθούμε και στα default values που έχουν οι 
+μεταβλητές όταν τις ορίζουμε αλλά δεν αναθέτουμε τιμές σε αυτές. Η Go, όποτε 
+βλέπει να έχει οριστεί μια μεταβλητή χωρίς κάποια τιμή, της αναθέτει μια default 
+τιμή σαν αρχική τιμή της μεταβλητής. Ας δούμε ένα απλό πρόγραμμα που δείχνει 
+ποιες είναι οι default τιμές σε διάφορα data types.</p>
+
+<p><strong>main.go</strong></p>
+ <pre class="prettyprint">
+    package main
+
+    import (
+        "fmt"
+    )
+    
+    func main() {
+    var i int
+    var f float64
+    var b bool
+    var s string
+    
+    fmt.Println("The default value for an integer variable is: ", i)
+    fmt.Println("The default value for a float64 variable is: ", f)
+    fmt.Println("The default value for a boolean variable is: ", b)
+    fmt.Println("The default value for a string variable is: ", s)
+    }
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    The default value for an integer variable is:  0
+    The default value for a float64 variable is:  0
+    The default value for a boolean variable is:  false
+    The default value for a string variable is:
+         </pre>
+
+<p>Σε πολλές γλώσσες προγραμματισμού, αν όχι σε όλες, θα ακούσετε πολλές 
+φορές την ορολογία scope ή scope of variable. Αυτό με λίγα και απλά λόγια 
+σημαίνει από που μέσα στο πρόγραμμα μας έχουμε πρόσβαση στις μεταβλητές έτσι 
+ώστε να τις χρησιμοποιήσουμε. Επειδή οι μεταβλητές σε ένα πρόγραμμα μπορεί 
+να είναι όλες γραμμένες στο ίδιο αρχείο, αυτό δεν σημαίνει ότι όλα τα 
+στοιχεία του κώδικα (που ανήκουν στο ίδιο αρχείο) μπορούν να τις δουν. 
+Αυτή η έννοια θα γίνει πολύ πιο ξεκάθαρη σε λίγο εφόσον μιλήσουμε και 
+ορίσουμε τι είναι το <strong>block</strong> κώδικα. </p>
+
+<p>Αν προσέξετε τον ορισμό της function main() θα παρατηρήσετε ότι 
+αμέσως μετά ανοίγουμε και κλείνουμε άγκιστρα ( { } ). Μέσα στα άγκιστρα 
+γράφουμε τον κώδικα που μπορεί να τρέχει η main( ). Όλες οι μεταβλητές που 
+ορίζουμε μέσα στην main( ) και κατά συνέπεια μέσα στο block κώδικα που ορίζεται 
+από τα άγκιστρα, θεωρούνται local μεταβλητές της main( ) και κανένας άλλος έξω από 
+την main( ) δεν μπορεί να έχει πρόσβαση σε αυτές και να τις καλέσει. </p>
+
+<p>Οπότε αν θέλατε όλα τα functions από τα οποία θα αποτελείται ο 
+κώδικας σας να έχουν πρόσβαση σε κάποια μεταβλητή τότε θα ήταν καλό να 
+ορίσετε αυτή την μεταβλητή ένα επίπεδο πιο πάνω. Κατά κάποιο τρόπο ορίζεται την 
+μεταβλητή να είναι global και οποιαδήποτε function ή λειτουργία του προγράμματος 
+μπορεί να την καλέσει και να την χρησιμοποιήσει.</p>
+
+<p><strong>main.go</strong></p>
+ <pre class="prettyprint">
+    package main
+
+    import (
+        "fmt"
+    )
+    
+    var name string = "Michail"
+    
+    func main() {
+    fmt.Println("Your name is:", name)
+    }
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    Your name is: Michail
+         </pre>
+
+<p>Το τελευταίο κομμάτι θεωρίας που μας έχει μείνει όσον αφορά τις μεταβλητές 
+είναι η έννοια του <strong>constants</strong>. Στην ουσία μια constant variable 
+μπορεί να δεχτεί τιμή για την πρώτη μόνο φορά και από εκεί και πέρα δεν μπορεί να 
+αλλάξει η τιμή της. Αν προσπαθήσουμε να την αλλάξουμε προγραμματιστικά κατά την εκτέλεση 
+του προγράμματος μας, θα λάβουμε μήνυμα λάθους από τον compiler της Go. 
+Για να ορίσουμε μια μεταβλητή σαν constant γράφουμε <strong>const</strong> μπροστά από 
+το όνομα της μεταβλητής.</p>
+
+<p><strong>main.go</strong></p>
+ <pre class="prettyprint">
+    package main
+
+    import (
+        "fmt"
+    )
+    
+    func main() {
+    const name string = "Michail"
+    fmt.Println("Your name is:", name)
+    name = "Michail Kassapoglou"
+    fmt.Println("Your new name is:", name)
+    }
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    src\main.go:10:6: cannot assign to name
+         </pre>
+
+
+                
+                    <a><a href="https://kassapoglou.github.io/go/go-programming.html"><font color="#0000CC">Πίσω στις ενότητες GO Programming</font> </a></a>
+                
+           
+
+                <div class="author-box">
+                    <div class="author-info flex flex-wrap">
+                        <div class="author-avatar">
+                            <img src="images/michail.jpg" alt="Michail Kassapoglou">
+
+                           
+                        </div><!-- .author-avatar -->
+
+                        <div class="author-details">
+                            <h3 class="author-name">Michail Kassapoglou <span>Admin</span></h3>
+
+                            <div class="entry-content mt-3">
+                                <p>Γεια σας, είμαι ο Μιχάλης Κασάπογλου και θα σας διδάξω με τον ποιο απλό 
+                                  τρόπο να προγραμματίζετε σε Python. Ασχολούμαι με την τεχνική εκπαίδευση 
+                                    σε διάφορες πλατφόρμες, λειτουργικά συστήματα και γλώσσες προγραμματισμού 
+                                    πάνω από 20 έτη. Κατέχω έναν αρκετά μεγάλο αριθμό πιστοποιήσεων
+                                    και σαν Τraining Lead στην Intrasoft έχω την δυνατότητα να αναβαθμίζω συνεχώς 
+                                    τις γνώσεις μου και να έχω άμεση επαφή με αληθινά projects και εξειδικευμένες μεθόδους 
+                                    ανάπτυξης εφαρμογών που έχουν υψηλές απαιτήσεις.  
+                                    Για τυχόν ερωτήσεις σας μπορείτε να επικοινωνήσετε μαζί μου 
+                                    στο <font color="#0000CC">Michail.Kassapoglou@gmail.com </font></p>
+                                    <p>   Σας ευχαριστώ που επισκεφτήκατε τα δωρεάν μαθήματα προγραμματισμού GO.</p>
+                            </div><!-- .entry-content -->
+                        </div><!-- .author-details -->
+                    </div><!-- .author-info -->
+                </div><!-- .author-box -->
+
+                
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+
+ 
+
+  
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+</html>
