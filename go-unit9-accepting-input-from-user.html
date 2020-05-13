@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Μαθαίνω Δωρεάν Go Προγραμματισμό</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line σεμιναρίων στην γλώσσα προγραμματισμού Go">
+    <meta name="robots" content="index, follow">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="go_style.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150900548-1');
+    </script>
+
+</head>
+
+<body class="single-blog-post">
+    <div class="page-header">
+        <header class="site-header">
+            <div class="top-header-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div
+                            class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                            <div class="header-bar-email d-flex align-items-center">
+                                <i class="fa fa-envelope"></i><a href="#">michail.kassapoglou@gmail.com</a>
+                            </div><!-- .header-bar-email -->
+
+                            <div class="header-bar-text lg-flex align-items-center">
+                                <!--  <p><i class="fa fa-phone"></i>001-1234-88888 </p> -->
+                            </div><!-- .header-bar-text -->
+                        </div><!-- .col -->
+
+                        <div
+                            class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                            <div class="header-bar-search">
+                                <form class="flex align-items-stretch">
+                                    <!--   <input type="search" placeholder="What would you like to learn?"> -->
+                                    <!--   <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button> -->
+                                </form>
+                            </div><!-- .header-bar-search -->
+
+                            <div class="header-bar-menu">
+                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
+                                    <!--  <li><a href="#">Register</a></li> -->
+                                    <!--    <li><a href="#">Login</a></li> -->
+                                </ul>
+                            </div><!-- .header-bar-menu -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div> <!-- .container-fluid -->
+            </div><!-- .top-header-bar -->
+
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-3">
+                            <div class="site-branding">
+                                <h1 class="site-title"><a href="https://kassapoglou.github.io/main/"
+                                        rel="home">Kassa<span>poglou</span></a></h1>
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
+
+                        <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                            <nav class="site-navigation flex justify-content-end align-items-center">
+                                <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                    <li class="current-menu-item"><a href="index.html">Home</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main">ΑΡΧΙΚΗ</a></li>
+                                    <li><a href="https://kassapoglou.github.io/go/go-programming.html">GOLANG</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main/contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                                </ul>
+
+                                <div class="hamburger-menu d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div><!-- .hamburger-menu -->
+
+
+                            </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+
+        <div class="page-header-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <header class="entry-header">
+                            <h1 class="entry-title">ΕΝΟΤΗΤΑ 9 GO - Accepting Input from User</h1>
+
+                            <div class="entry-meta flex justify-content-center align-items-center">
+                                <div class="post-author"><a href="#">Michail Kassapoglou </a></div>
+
+                                <!--  <div class="post-comments"><a href="#">02 Comments</a></div> -->
+                            </div><!-- .entry-meta -->
+                        </header><!-- .entry-header -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .page-header-overlay -->
+    </div><!-- .page-header -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-10">
+                <div class="featured-image">
+                    <!--  <img src="images/single-post.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια PYTHON"> -->
+
+                    <div class="posted-date position-absolute">
+                        <div class="day">14</div>
+                        <div class="month">May</div>
+                    </div><!-- .posted-date -->
+                </div><!-- .featured-image -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-1" style="height:0">
+                <div class="post-share">
+
+
+
+                </div><!-- .post-share -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-12">
+                <div class="single-post-wrap">
+
+                </div><!-- .single-post-wrap -->
+
+                <p>
+                    <h3>ΔΩΡΕΑΝ ΜΑΘΗΜΑΤΑ GO</h3>
+                </p>
+                <img src="images/Golang.png" alt="Δωρεάν Μαθήματα και Σεμινάρια GO" class="center">
+                <p></p>
+                <p>Στο σημερινό δωρεάν μάθημα GO θα δούμε πως μπορούμε να
+                    δώσουμε τιμές στο πρόγραμμα μας ενώ ο κώδικας μας εκτελείται. Με
+                    άλλα λόγια θέλουμε το πρόγραμμα μας να έχει την δυνατότητα να
+                    δέχεται τιμές από τον χρήστη ενώ τρέχει.</p>
+
+                <p>Για να μπορέσουμε να δώσουμε μια τέτοια ικανότητα στο πρόγραμμα
+                    μας, θα πρέπει να προσθέσουμε κάποια επιπλέον πακέτα εκτός από
+                    το “fmt”. Επίσης, καλό θα είναι να αρχίζουμε να ψάχνουμε και το
+                    documentation της GO για επιπλέον δυνατότητες στο ίδιο θέμα. Οι
+                    δυνατότητες στις οποίες αναφερόμαστε δεν είναι τίποτα άλλο από
+                    μεθόδους που μας προσφέρει η GO και η εξοικείωση σας με το
+                    documentation θα είναι μια πολύτιμη επένδυση χρόνου.</p>
+
+                <p>Στην <a href="https://kassapoglou.github.io/go/go-unit6-the-if-else-statement.html">
+                        <font color="#0000CC"> Ενότητα 6</font>
+                    </a> των δωρεάν μαθημάτων GO είχαμε χρησιμοποιήσει ένα απλό
+                    πρόγραμμα για να δείξουμε την λογική του if else. Θα χρησιμοποιήσουμε
+                    λοιπόν το ίδιο πρόγραμμα και θα το τροποποιήσουμε έτσι ώστε να ζητάει
+                    από τον χρήστη να γράψει έναν ακέραιο αριθμό αντί να είναι μόνιμα
+                    γραμμένος μέσα στον κώδικα. Ας θυμηθούμε ξανά το πρόγραμμα μας πριν
+                    μιλήσουμε για το πως δεχόμαστε input στην GO.</p>
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+            <xmp>
+package main
+
+import "fmt"
+
+func main() {
+    var score int = 79
+    var grade string
+
+    if score >= 90 {
+        grade = "A"
+        fmt.Println("Way to go!")
+    } else if score >= 80 {
+        grade = "B"
+        fmt.Println("Good job!")
+    } else if score >= 70 && score < 80 {
+        grade = "C"
+    } else if score >= 60 {
+        grade = "D"
+    } else {
+        grade = "F"
+
+        fmt.Println("Try again")
+    }
+
+    fmt.Println("Your grade is a ", grade)
+
+}
+
+    </xmp>
+    </pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+<xmp>
+Your grade is a  C
+</xmp>
+</pre>
+
+                <p>Για αρχή, θα πρέπει να αφαιρέσουμε την γραμμή var score int = 79 από τον κώδικα μας, αφού
+                    το input θα προέρχεται από τον χρήστη κατά την διάρκεια εκτέλεσης του προγράμματος. Τώρα
+                    πρέπει να προσθέσουμε μια fmt.Print( ) function που να δείχνει ένα μήνυμα στον χρήστη
+                    ενημερώνοντας τον για το τι θα πρέπει να εισάγει σαν σωστή τιμή στο πρόγραμμα.</p>
+
+                <p><strong>fmt.Println(“Enter a grade: ”) </strong></p>
+
+                <p>Τώρα πρέπει να γράψουμε εκείνο το κομμάτι κώδικα που θα διαβάζει από το
+                    standard input δηλαδή το πληκτρολόγιο μας. Για αυτό το σκοπό θα χρησιμοποιήσουμε
+                    την function <strong>NewReader( )</strong> από το πακέτο <strong>bufio</strong>. Μπορείτε να
+                    δείτε πληροφορίες σχετικά με αυτό το πακέτο στο documention της
+                    golang <a href="https://golang.org/pkg/bufio/#NewReader">
+                        <font color="#0000CC"> (https://golang.org/pkg/bufio/#NewReader)</font>
+                    </a>. Η γραμμή κώδικα
+                    που πρέπει
+                    να προσθέσουμε είναι η εξής:</p>
+
+                <p><strong>reader := bufio.NewReader(os.Stdin)</strong></p>
+
+                <p>Με βάση πάλι το documentation, η function NewReader επιστρέφει ένα αντικείμενο Reader.</p>
+                <img src="go-unit9/go-unit9-1.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια GO" class="center">
+                <p></p>
+
+                <p>Σαν παράμετρο μέσα στην function NewReader περνάμε την function <strong>Stdin</strong> που
+                    ανήκει στο πακέτο <strong>os</strong>.</p>
+
+                <img src="go-unit9/go-unit9-2.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια GO" class="center">
+                <p></p>
+
+                <p>Οπότε ολόκληρη η γραμμή κώδικα που γράψαμε δημιουργεί ένα αντικείμενο
+                    reader, που δημιουργήσαμε με την NewReader, και το οποίο θα δέχεται
+                    input από το πληκτρολόγιο. Γιατί όμως έπρεπε να δημιουργήσουμε πρώτα
+                    αυτό το αντικείμενο reader? Η απάντηση είναι πολύ απλή – αυτό το
+                    αντικείμενο έχει πολλές function να μας προσφέρει και μια από αυτές
+                    είναι η ReadString που χρειαζόμαστε. Με βάση πάλι το documentation
+                    η ReadString επιστρέφει την πληροφορία που έχει τυπώσει ο χρήστης
+                    σαν string. </p>
+
+                <img src="go-unit9/go-unit9-3.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια GO" class="center">
+                <p></p>
+
+                <p>Διαβάζοντας το documentation βλέπουμε ότι η ReadString διαβάζει
+                    την πληροφορία μέχρι και το delimiter. Για αυτό και πρέπει να βάλουμε
+                    στην παρένθεση της το delimiter \n το οποίο σημειώνει και το
+                    τέλος του input από τον χρήστη. Θέλουμε να διαβάσουμε ότι έχει
+                    γράψει ο χρήστης μέχρι να πατήσει Enter για αυτό και διαλέξαμε
+                    τον newline delimiter.</p>
+
+                <p>Αφού λοιπόν ο χρήστης μας δώσει το input, εμείς μπορούμε να προχωρήσουμε
+                    και να το αναθέσουμε σε μια δική μας μεταβλητή που την ονομάζουμε
+                    scorestr η οποία θα είναι είδος string. Αν προσέξουμε λίγο περισσότερο
+                    το documentation θα δούμε πως η ReadString επιστρέφει ένα
+                    string (το οποίο διάβασε από τον χρήστη) και ένα error. Επειδή
+                    δεν επιθυμούμε να διαχειριστούμε το λάθος ( για να κρατήσουμε
+                    απλό τον κώδικα μας) και απλά θέλουμε να κάνει σωστά compile το
+                    πρόγραμμα μας, γράφουμε το underscore ( _ ). Οπότε η γραμμή αυτή
+                    του κώδικα θα είναι:</p>
+
+                <p><strong>scorestr, _ = reader.ReadString(‘\n’)</strong></p>
+
+                <p>Πριν κάνουμε την μετατροπή από string σε int πρέπει
+                    να αφαιρέσουμε τους newline και carriage return
+                    delimiters για αυτό και χρησιμοποιούμε την <strong>TrimSuffix</strong> function
+                    από το πακέτο <strong>strings</strong>. Το αποτέλεσμα το αναθέτουμε
+                    πίσω στην scorestr.</p>
+
+                <p><strong>scorestr = strings.TrimSuffix(scorestr, “\r\n”)</strong></p>
+
+                <p>Το τελευταίο βήμα είναι να χρησιμοποιήσουμε την <strong>Atoi( )</strong> function
+                    από το πακέτο <strong>strconv</strong> για να μετατρέψουμε
+                    την string τιμή σε int. Το αποτέλεσμα το αναθέτουμε σε μια
+                    καινούργια μεταβλητή score. Ολόκληρος ο κώδικας τώρα είναι ο εξής:</p>
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+  <xmp>
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "os"
+    "strconv"
+    "strings"
+)
+
+func main() {
+    fmt.Print("Enter a grade: ")
+    reader :=bufio.NewReader(os.Stdin)
+
+    var scorestr string
+
+    scorestr, _ = reader.ReadString('\n')
+    scorestr = strings.TrimSuffix(scorestr, "\r\n")
+    score, _ := strconv.Atoi(scorestr)
+
+    var grade string
+
+    if score >= 90 {
+        grade = "A"
+        fmt.Println("Way to go!")
+    } else if score >= 80 {
+        grade = "B"
+        fmt.Println("Good job!")
+    } else if score >= 70 && score < 80 {
+        grade = "C"
+    } else if score >= 60 {
+        grade = "D"
+    } else {
+        grade = "F"
+
+        fmt.Println("Try again")
+    }
+
+    fmt.Println("Your grade is a ", grade)
+
+}
+
+  </xmp>
+  </pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+<xmp>
+Enter a grade: 99
+Way to go!
+Your grade is a  A
+</xmp>
+</pre>
+
+                <p>Αν τώρα ο χρήστης δεν εισάγει την σωστή τιμή και το πρόγραμμα
+                    μας σταματάει να τρέχει, μπορούμε να αντικαταστήσουμε το
+                    underscore ( _ ) για το λάθος, με την λέξη <strong>err</strong> και
+                    να ελέγξουμε αν είναι <strong>nil</strong> δηλαδή αν περιέχει κάποιο
+                    λάθος. Αν δεν είναι nil, δηλαδή αν περιέχει λάθος, θέλουμε να το
+                    δούμε με τη μορφή log και να σταματήσει την εκτέλεση του προγράμματος
+                    μας. Αυτή την δυνατότητα μπορούμε να την αποκτήσουμε με
+                    την χρήση του function <strong>Fatal( )</strong> από το πακέτο <strong>log</strong>
+                    <a href="https://golang.org/pkg/log/#Fatalf">
+                        <font color="#0000CC"> (https://golang.org/pkg/log/#Fatalf )</font>
+                    </a>.
+                    <img src="go-unit9/go-unit9-4.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια GO" class="center">
+                    <p></p>
+
+                    <p>Ο κώδικας μας τώρα αλλάζει ως εξής:</p>
+
+                    <p><strong>main.go</strong></p>
+                    <pre class="prettyprint">
+<xmp>
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "log"
+    "os"
+    "strconv"
+    "strings"
+)
+
+func main() {
+    fmt.Print("Enter a grade: ")
+    reader :=bufio.NewReader(os.Stdin)
+
+    var scorestr string
+
+    scorestr, _ = reader.ReadString('\n')
+    scorestr = strings.TrimSuffix(scorestr, "\r\n")
+    score, err := strconv.Atoi(scorestr)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    var grade string
+
+    if score >= 90 {
+        grade = "A"
+        fmt.Println("Way to go!")
+    } else if score >= 80 {
+        grade = "B"
+        fmt.Println("Good job!")
+    } else if score >= 70 && score < 80 {
+        grade = "C"
+    } else if score >= 60 {
+        grade = "D"
+    } else {
+        grade = "F"
+
+        fmt.Println("Try again")
+    }
+
+    fmt.Println("Your grade is a ", grade)
+
+}
+    
+</xmp>
+</pre>
+
+                    <p><strong>Output</strong></p>
+                    <pre class="prettyprint">
+<xmp>
+Enter a grade: abc
+2020/05/13 23:22:00 strconv.Atoi: parsing "abc": invalid syntax
+exit status 1
+</xmp>
+</pre>
+                    <a><a href="https://kassapoglou.github.io/go/go-programming.html">
+                            <font color="#0000CC">Πίσω στις ενότητες GO Programming</font>
+                        </a></a>
+
+
+
+                    <div class="author-box">
+                        <div class="author-info flex flex-wrap">
+                            <div class="author-avatar">
+                                <img src="images/michail.jpg" alt="Michail Kassapoglou">
+
+
+                            </div><!-- .author-avatar -->
+
+                            <div class="author-details">
+                                <h3 class="author-name">Michail Kassapoglou <span>Admin</span></h3>
+
+                                <div class="entry-content mt-3">
+                                    <p>Γεια σας, είμαι ο Μιχάλης Κασάπογλου και θα σας διδάξω με τον ποιο απλό
+                                        τρόπο να προγραμματίζετε σε Python. Ασχολούμαι με την τεχνική εκπαίδευση
+                                        σε διάφορες πλατφόρμες, λειτουργικά συστήματα και γλώσσες προγραμματισμού
+                                        πάνω από 20 έτη. Κατέχω έναν αρκετά μεγάλο αριθμό πιστοποιήσεων
+                                        και σαν Τraining Lead στην Intrasoft έχω την δυνατότητα να αναβαθμίζω
+                                        συνεχώς
+                                        τις γνώσεις μου και να έχω άμεση επαφή με αληθινά projects και
+                                        εξειδικευμένες
+                                        μεθόδους
+                                        ανάπτυξης εφαρμογών που έχουν υψηλές απαιτήσεις.
+                                        Για τυχόν ερωτήσεις σας μπορείτε να επικοινωνήσετε μαζί μου
+                                        στο <font color="#0000CC">Michail.Kassapoglou@gmail.com </font>
+                                    </p>
+                                    <p> Σας ευχαριστώ που επισκεφτήκατε τα δωρεάν μαθήματα προγραμματισμού GO.</p>
+                                </div><!-- .entry-content -->
+                            </div><!-- .author-details -->
+                        </div><!-- .author-info -->
+                    </div><!-- .author-box -->
+
+
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+
+
+
+
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+
+</html>
