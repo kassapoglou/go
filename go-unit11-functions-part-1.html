@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Μαθαίνω Δωρεάν Go Προγραμματισμό</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line σεμιναρίων στην γλώσσα προγραμματισμού Go">
+    <meta name="robots" content="index, follow">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="go_style.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150900548-1');
+    </script>
+
+</head>
+
+<body class="single-blog-post">
+    <div class="page-header">
+        <header class="site-header">
+            <div class="top-header-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div
+                            class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                            <div class="header-bar-email d-flex align-items-center">
+                                <i class="fa fa-envelope"></i><a href="#">michail.kassapoglou@gmail.com</a>
+                            </div><!-- .header-bar-email -->
+
+                            <div class="header-bar-text lg-flex align-items-center">
+                                <!--  <p><i class="fa fa-phone"></i>001-1234-88888 </p> -->
+                            </div><!-- .header-bar-text -->
+                        </div><!-- .col -->
+
+                        <div
+                            class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                            <div class="header-bar-search">
+                                <form class="flex align-items-stretch">
+                                    <!--   <input type="search" placeholder="What would you like to learn?"> -->
+                                    <!--   <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button> -->
+                                </form>
+                            </div><!-- .header-bar-search -->
+
+                            <div class="header-bar-menu">
+                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
+                                    <!--  <li><a href="#">Register</a></li> -->
+                                    <!--    <li><a href="#">Login</a></li> -->
+                                </ul>
+                            </div><!-- .header-bar-menu -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div> <!-- .container-fluid -->
+            </div><!-- .top-header-bar -->
+
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-3">
+                            <div class="site-branding">
+                                <h1 class="site-title"><a href="https://kassapoglou.github.io/main/"
+                                        rel="home">Kassa<span>poglou</span></a></h1>
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
+
+                        <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                            <nav class="site-navigation flex justify-content-end align-items-center">
+                                <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                    <li class="current-menu-item"><a href="index.html">Home</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main">ΑΡΧΙΚΗ</a></li>
+                                    <li><a href="https://kassapoglou.github.io/go/go-programming.html">GOLANG</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main/contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                                </ul>
+
+                                <div class="hamburger-menu d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div><!-- .hamburger-menu -->
+
+
+                            </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+
+        <div class="page-header-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <header class="entry-header">
+                            <h1 class="entry-title">ΕΝΟΤΗΤΑ 11 GO - Funtions (Part 1)</h1>
+
+                            <div class="entry-meta flex justify-content-center align-items-center">
+                                <div class="post-author"><a href="#">Michail Kassapoglou </a></div>
+
+                                <!--  <div class="post-comments"><a href="#">02 Comments</a></div> -->
+                            </div><!-- .entry-meta -->
+                        </header><!-- .entry-header -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .page-header-overlay -->
+    </div><!-- .page-header -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-10">
+                <div class="featured-image">
+                    <!--  <img src="images/single-post.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια PYTHON"> -->
+
+                    <div class="posted-date position-absolute">
+                        <div class="day">20</div>
+                        <div class="month">May</div>
+                    </div><!-- .posted-date -->
+                </div><!-- .featured-image -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-1" style="height:0">
+                <div class="post-share">
+
+
+
+                </div><!-- .post-share -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-12">
+                <div class="single-post-wrap">
+
+                </div><!-- .single-post-wrap -->
+
+                <p>
+                    <h3>ΔΩΡΕΑΝ ΜΑΘΗΜΑΤΑ GO</h3>
+                </p>
+                <img src="images/Golang.png" alt="Δωρεάν Μαθήματα και Σεμινάρια GO" class="center">
+                <p></p>
+                <p>Στο σημερινό δωρεάν μάθημα GO θα δούμε πως δημιουργούμε τα δικά μας
+                    functions. Θα ξεκινήσουμε με την πιο απλή μορφή που μπορεί να έχει ένα
+                    λειτουργικό function και σταδιακά θα φτάσουμε σε πιο προχωρημένες δομές
+                    functions όπως εκείνες που δέχονται μεταβλητό αριθμό παραμέτρων και
+                    επιστρέφουν πολλαπλά αποτελέσματα.</p>
+
+                <p>Η δήλωση μιας function ξεκινάει με την λέξη κλειδί func και αμέσως
+                    μετά ακολουθούν το όνομα που θέλουμε να δώσουμε στην function και ένα
+                    ζευγάρι παρενθέσεων. Τέλος ανάμεσα σε άγκιστρα γράφουμε τον κώδικα που
+                    θα εκτελέσει η function όταν την καλέσουμε. Για να καλέσουμε την function
+                    μέσα από το κύριο πρόγραμμα μας δεν έχουμε παρά να γράψουμε το όνομα της
+                    function ακολουθούμενο από παρενθέσεις. Ας δούμε ένα απλό παράδειγμα.</p>
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+<xmp>
+package main
+
+import "fmt"
+
+func hello(){
+    fmt.Println("Welcome to GO free lessons")
+}
+
+func main() {
+    hello()
+}
+</xmp>
+</pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+<xmp>
+Welcome to GO free lessons
+</xmp>
+</pre>
+                <p>Όταν καλούμε την hello( ) function δεν βάζουμε μπροστά το όνομα
+                    του πακέτου εάν η function ανήκει στο ίδιο πακέτο όπως
+                    η main( ). Γράφοντας, για παράδειγμα, main.hello( ) θα προκαλέσει
+                    λάθος στην εκτέλεση του προγράμματος.</p>
+
+                <p>Οι κανόνες ονομασίας μιας function είναι ίδιοι με εκείνους που χρησιμοποιούμε
+                    για να ονομάσουμε τις μεταβλητές μας.</p>
+                <ul>
+                    <li>Το όνομα πρέπει να ξεκινάει με γράμμα και μετά μπορεί να
+                        περιλαμβάνει οποιοδήποτε γράμμα ή αριθμό.</li>
+                    <li>Τα ονόματα των functions που ξεκινάνε με κεφαλαίο γράμμα
+                        μπορούν να χρησιμοποιηθούν και εκτός του πακέτου στο οποίο
+                        ανήκουν. Αν η χρήση του είναι μόνο για το πακέτο στο οποίο
+                        έχουν οριστεί (όπως στο παράδειγμα μας) τότε το πρώτο γράμμα
+                        πρέπει να είναι πεζό (μικρό).</li>
+                    <li>Αν το όνομα της function περιλαμβάνει πολλαπλές λέξεις
+                        τότε συνηθίζεται να χρησιμοποιούμε camelCase.</li>
+                </ul>
+
+                <p>Μπορούμε επίσης να περάσουμε τιμές σε μια function ορίζοντας
+                    παραμέτρους. Η παράμετρος είναι μια τοπική μεταβλητή της function
+                    και η τιμή της ορίζεται όταν καλούμε την function. Μπορούμε να
+                    ορίσουμε μια ή και περισσότερες παραμέτρους μέσα στην παρένθεση
+                    της function. Το κόμμα χωρίζει τον ορισμό της μιας παραμέτρου
+                    από την άλλη.</p>
+
+                <p>Όπως κάνουμε και για τον ορισμό κάθε μεταβλητής, έτσι και
+                    όταν ορίζουμε παραμέτρους πρέπει να ορίσουμε και το type για
+                    την κάθε παράμετρο ξεχωριστά (π.χ float64, bool, κτλ). </p>
+
+                <p>Τέλος, κάθε function έχει την δυνατότητα να μας γυρίσει μια
+                    ή και περισσότερες τιμές πίσω στο πρόγραμμα μετά το τέλος
+                    της εκτέλεσή της. Ο κανόνας της GO απαιτεί από εμάς να ορίσουμε
+                    το data type της τιμής που μας επιστρέφει η function.</p>
+
+                <p>Ας δούμε όμως ένα απλό παράδειγμα μέσα από το οποίο μπορούμε να δούμε όλη την θεωρία για την οποία
+                    έχουμε μιλήσει μέχρι τώρα.
+                </p>
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+<xmp>
+package main
+
+import "fmt"
+
+func addition(x int, y int) int{
+    return x + y
+}
+
+func main() {
+    x:= addition(5, 15)
+    fmt.Println("result is", x)
+}
+</xmp>
+</pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+<xmp>
+result is 20
+</xmp>
+</pre>
+
+                <p>Η γενικότερη ιδέα πίσω από την λειτουργία μιας function
+                    είναι να λαμβάνει input και να μας επιστρέφει ένα output. Ο κώδικας
+                    μέσα στην function αναλαμβάνει να κάνει όλες τις απαραίτητες πράξεις
+                    που χρειάζονται για να λάβουμε το σωστό αποτέλεσμα. Στο παράδειγμα
+                    μας, η λέξη κλειδί func ενημερώνει τον compiler για την αρχή της
+                    function. Το όνομα της function είναι addition. Μέσα στην παρένθεση
+                    ορίζουμε ότι η function θα δέχεται δύο int παραμέτρους, ενώ έξω, και
+                    αμέσως μετά την παρένθεση, ορίζουμε ότι η function θα μας επιστρέφει
+                    μια int τιμή. Μέσα στα άγκιστρα ορίζουμε τον κώδικα που θα εκτελεί η
+                    function. Επειδή έχουμε ορίσει ότι η function θα μας επιστρέφει μια
+                    int τιμή, τότε είναι απαραίτητη η χρήση της λέξης return. Με την
+                    return μπορούμε να επιστρέψουμε το αποτέλεσμα ενός expression ή
+                    την τιμή μιας μεταβλητής. Δεν είναι όμως απαραίτητο όλες οι
+                    functions να επιστρέφουν κάτι. Μπορούν απλά να εκτελούν πράξεις
+                    χωρίς να επιστρέφουν τιμή πίσω στο πρόγραμμα. Σε αυτή την περίπτωση
+                    δεν χρησιμοποιούμε το return μέσα στο κώδικα αλλά ούτε και δηλώνουμε
+                    return data type στον ορισμό της function. Η πρώτη γραμμή ορισμού
+                    της function ονομάζεται το signature της function.</p>
+
+                <p>Όταν λέμε ότι μια function δεν επιστρέφει τίποτα πίσω στο
+                    πρόγραμμα σημαίνει ότι δεν έχει νόημα να αναθέσουμε το αποτέλεσμα
+                    της function σε μια μεταβλητή.</p>
+                <p><strong>x := myfunction( )</strong></p>
+                <p>Το γεγονός ότι η function τυπώνει το αποτέλεσμα στο terminal
+                    δεν σημαίνει ότι επιστρέφει κάτι πίσω στο πρόγραμμα μας. Ελπίζω
+                    με αυτή την γρήγορη επεξήγηση να είναι ξεκάθαρη η έννοια του
+                    return όπως χρησιμοποιείται σε μια function.</p>
+
+                <p>Ένα παράδειγμα μιας function που κάνει κάποιες πράξεις
+                    αλλά δεν επιστρέφει τίποτα πίσω στο πρόγραμμα μας είναι το εξής:</p>
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+            <xmp>
+package main
+
+import "fmt"
+
+func goLang(){
+    for i := 1; i <=30; i++{
+        if i%15 == 0 {
+            fmt.Println("GOLang")
+        }else if i%3==0 {
+            fmt.Println("GO")
+        }else if i%5==0  {
+            fmt.Println("Lang")
+        }else {
+            fmt.Println(i)
+        }
+    }
+}
+
+func main() {
+    goLang()
+}
+                
+            </xmp>
+            </pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+            <xmp>
+1
+2
+GO
+4
+Lang
+GO
+7
+8
+GO
+Lang
+11
+GO
+13
+14
+GOLang
+16
+17
+GO
+19
+Lang
+GO
+22
+23
+GO
+Lang
+26
+GO
+28
+29
+GOLang
+                
+            </xmp>
+            </pre>
+
+                <p>Οι functions στην GO μπορούν να επιστρέψουν πολλαπλές τιμές
+                    ταυτόχρονα αφού πρώτα οριστούν στο function signature. Αυτό έχει
+                    σαν αποτέλεσμα το return statement μέσα στην function να επιστρέφει
+                    περισσότερες από μια τιμές. Ας δούμε ένα απλό παράδειγμα μιας
+                    function που ενώ δεν δέχεται καμία input παράμετρο επιστρέφει μια
+                    int και μια string τιμή. Οι τιμές επιστρέφονται πίσω στο πρόγραμμα
+                    μέσω της return statement και χωρίζονται με κόμμα.</p>
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+    <xmp>
+package main
+
+import "fmt"
+
+func championTeam()(int, string){
+    i:=2
+    s:="Liverpool"
+    return i, s
+}
+
+func main() {
+    goals, team := championTeam()
+    fmt.Printf("%v won the championship by scoring %v goals", team, goals)
+}
+    </xmp>
+    </pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+    <xmp>
+Liverpool won the championship by scoring 2 goals
+    </xmp>
+    </pre>
+
+                <p>Στην GO έχουμε επίσης την δυνατότητα να περνάμε σε μια function
+                    μεταβλητό αριθμό παραμέτρων αρκεί όλες να είναι το ίδιο data type. Ο
+                    τρόπος που ορίζουμε σε μια function να δέχεται πολλαπλές παραμέτρους
+                    είναι με την χρήση τριών τελείων ( . . . ). Ας δούμε μέσα από ένα απλό
+                    παράδειγμα πως ακριβώς χρησιμοποιούμε τις variadic functions όπως
+                    ονομάζονται. Μέσα στο κώδικα χρησιμοποιούμε την έννοια του slice
+                    για να διαβάσουμε τις τιμές. Μην ανησυχείτε για την έννοια του
+                    slice. Θα την αναλύσουμε σε μελλοντική ενότητα μαζί με τους array
+                    και τα maps.</p>
+
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+    <xmp>
+package main
+
+import "fmt"
+
+func sumNumbers(numbers ...int) int{
+    total :=0
+    for _, number := range numbers {
+        total += number
+    }
+    return total
+}
+
+func main() {
+    result := sumNumbers(1, 2, 3, 4)
+    fmt.Printf("The result is %v", result)
+}
+    </xmp>
+    </pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+    <xmp>
+The result is 10
+    </xmp>
+    </pre>
+                <p>Πριν κλείσουμε το πρώτο μέρος της αναφοράς μας στα functions
+                    της GO, θα αναφερθούμε σε μια ακόμα ιδιαίτερη κατηγόρια τους που
+                    είναι αυτή των named return values. Χρησιμοποιώντας named return
+                    values μπορούμε να αναθέσουμε τιμές σε τοπικές μεταβλητές της
+                    function πριν επιστρέψουμε τις τιμές τους πίσω στο πρόγραμμα. Για
+                    να χρησιμοποιήσουμε σωστά named return values, πρέπει πρώτα να
+                    ορίσουμε τις μεταβλητές στο signature της function σαν return values.</p>
+
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+    <xmp>
+package main
+
+import "fmt"
+
+func myName()(x, y string){
+    x = "Michail"
+    y="Kassapoglou"
+    return
+}
+
+func main() {
+    fmt.Println(myName())
+}
+        
+    </xmp>
+    </pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+    <xmp>
+Michail Kassapoglou
+    </xmp>
+    </pre>
+                <p>Μέσα στην function, αναθέτουμε τιμές στις named variables. Επειδή
+                    χρησιμοποιούμε named return values δεν είναι ανάγκη να δηλώσουμε
+                    τις μεταβλητές στο return statement. Γράφοντας απλά return, η function
+                    θα μας επιστρέψει όλες τις μεταβλητές. Αυτό ονομάζεται naked return statement.</p>
+
+                <a><a href="https://kassapoglou.github.io/go/go-programming.html">
+                        <font color="#0000CC">Πίσω στις ενότητες GO Programming</font>
+                    </a></a>
+
+
+
+                <div class="author-box">
+                    <div class="author-info flex flex-wrap">
+                        <div class="author-avatar">
+                            <img src="images/michail.jpg" alt="Michail Kassapoglou">
+
+
+                        </div><!-- .author-avatar -->
+
+                        <div class="author-details">
+                            <h3 class="author-name">Michail Kassapoglou <span>Admin</span></h3>
+
+                            <div class="entry-content mt-3">
+                                <p>Γεια σας, είμαι ο Μιχάλης Κασάπογλου και θα σας διδάξω με τον ποιο απλό
+                                    τρόπο να προγραμματίζετε σε Python. Ασχολούμαι με την τεχνική εκπαίδευση
+                                    σε διάφορες πλατφόρμες, λειτουργικά συστήματα και γλώσσες προγραμματισμού
+                                    πάνω από 20 έτη. Κατέχω έναν αρκετά μεγάλο αριθμό πιστοποιήσεων
+                                    και σαν Τraining Lead στην Intrasoft έχω την δυνατότητα να αναβαθμίζω
+                                    συνεχώς
+                                    τις γνώσεις μου και να έχω άμεση επαφή με αληθινά projects και
+                                    εξειδικευμένες
+                                    μεθόδους
+                                    ανάπτυξης εφαρμογών που έχουν υψηλές απαιτήσεις.
+                                    Για τυχόν ερωτήσεις σας μπορείτε να επικοινωνήσετε μαζί μου
+                                    στο <font color="#0000CC">Michail.Kassapoglou@gmail.com </font>
+                                </p>
+                                <p> Σας ευχαριστώ που επισκεφτήκατε τα δωρεάν μαθήματα προγραμματισμού GO.</p>
+                            </div><!-- .entry-content -->
+                        </div><!-- .author-details -->
+                    </div><!-- .author-info -->
+                </div><!-- .author-box -->
+
+
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+
+
+
+
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+
+</html>
