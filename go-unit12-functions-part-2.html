@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Μαθαίνω Δωρεάν Go Προγραμματισμό</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line σεμιναρίων στην γλώσσα προγραμματισμού Go">
+    <meta name="robots" content="index, follow">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="go_style.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150900548-1');
+    </script>
+
+</head>
+
+<body class="single-blog-post">
+    <div class="page-header">
+        <header class="site-header">
+            <div class="top-header-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div
+                            class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                            <div class="header-bar-email d-flex align-items-center">
+                                <i class="fa fa-envelope"></i><a href="#">michail.kassapoglou@gmail.com</a>
+                            </div><!-- .header-bar-email -->
+
+                            <div class="header-bar-text lg-flex align-items-center">
+                                <!--  <p><i class="fa fa-phone"></i>001-1234-88888 </p> -->
+                            </div><!-- .header-bar-text -->
+                        </div><!-- .col -->
+
+                        <div
+                            class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                            <div class="header-bar-search">
+                                <form class="flex align-items-stretch">
+                                    <!--   <input type="search" placeholder="What would you like to learn?"> -->
+                                    <!--   <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button> -->
+                                </form>
+                            </div><!-- .header-bar-search -->
+
+                            <div class="header-bar-menu">
+                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
+                                    <!--  <li><a href="#">Register</a></li> -->
+                                    <!--    <li><a href="#">Login</a></li> -->
+                                </ul>
+                            </div><!-- .header-bar-menu -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div> <!-- .container-fluid -->
+            </div><!-- .top-header-bar -->
+
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-3">
+                            <div class="site-branding">
+                                <h1 class="site-title"><a href="https://kassapoglou.github.io/main/"
+                                        rel="home">Kassa<span>poglou</span></a></h1>
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
+
+                        <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                            <nav class="site-navigation flex justify-content-end align-items-center">
+                                <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                    <li class="current-menu-item"><a href="index.html">Home</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main">ΑΡΧΙΚΗ</a></li>
+                                    <li><a href="https://kassapoglou.github.io/go/go-programming.html">GOLANG</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main/contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                                </ul>
+
+                                <div class="hamburger-menu d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div><!-- .hamburger-menu -->
+
+
+                            </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+
+        <div class="page-header-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <header class="entry-header">
+                            <h1 class="entry-title">ΕΝΟΤΗΤΑ 12 GO - Funtions (Part 2)</h1>
+
+                            <div class="entry-meta flex justify-content-center align-items-center">
+                                <div class="post-author"><a href="#">Michail Kassapoglou </a></div>
+
+                                <!--  <div class="post-comments"><a href="#">02 Comments</a></div> -->
+                            </div><!-- .entry-meta -->
+                        </header><!-- .entry-header -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .page-header-overlay -->
+    </div><!-- .page-header -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-10">
+                <div class="featured-image">
+                    <!--  <img src="images/single-post.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια PYTHON"> -->
+
+                    <div class="posted-date position-absolute">
+                        <div class="day">22</div>
+                        <div class="month">May</div>
+                    </div><!-- .posted-date -->
+                </div><!-- .featured-image -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-1" style="height:0">
+                <div class="post-share">
+
+
+
+                </div><!-- .post-share -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-12">
+                <div class="single-post-wrap">
+
+                </div><!-- .single-post-wrap -->
+
+                <p>
+                    <h3>ΔΩΡΕΑΝ ΜΑΘΗΜΑΤΑ GO</h3>
+                </p>
+                <img src="images/Golang.png" alt="Δωρεάν Μαθήματα και Σεμινάρια GO" class="center">
+                <p></p>
+                <p>Στο σημερινό δωρεάν μάθημα GO θα συνεχίσουμε την αναφορά μας στα
+                    functions και θα δούμε κάποιες έξτρα ιδιότητες τους όπως anonymous
+                    functions και closures. Ας ξεκινήσουμε πρώτα από τα anonymous functions.</p>
+
+                <p>Μέχρι τώρα, όλα τα functions που δημιουργήσαμε είχανε όνομα. Μπορούμε
+                    όμως στην GO να ορίσουμε functions που δεν έχουν όνομα. Εκτός από την
+                    παράλειψη του ονόματος όλες οι άλλες λειτουργίες και ιδιότητες του
+                    function παραμένουν οι ίδιες. Δηλαδή μπορούμε να ορίσουμε input
+                    παραμέτρους και να λαμβάνουμε πίσω τιμές μέσω των returning
+                    values. Επίσης μπορούμε να ορίσουμε μια anonymous function μέσα
+                    σε μια κανονική function.</p>
+
+                <p>Η γενική δομή των anonymous functions είναι η εξής:</p>
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+<xmp>
+package main
+
+import "fmt"
+
+func main() {
+    func(){
+        fmt.Println("Welcome to Kassapoglou.github.io/main site")
+    }()
+}
+</xmp>
+</pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+<xmp>
+Welcome to Kassapoglou.github.io/main site
+</xmp>
+</pre>
+
+                <p>Η πρώτη μας παρατήρηση είναι ότι μέσα στην main( ) function
+                    έχουμε ορίσει μια anonymous function. Η δήλωση του anonymous
+                    function ξεκινάει με την λέξη func και μετά, εφόσον δεν χρησιμοποιούμε
+                    input παραμέτρους, ακολουθούν κενές παρενθέσεις. Ανάμεσα στα άγκιστρα
+                    ορίζουμε τον κώδικα που θα εκτελεστεί από την anonymous function. Υπάρχει
+                    ένα ακόμα σετ παρενθέσεων μετά από το τελευταίο άγκιστρο. Αυτές είναι
+                    το πιο σημαντικό σημείο ορισμού του anonymous function γιατί ορίζουν
+                    την εκτέλεση του για αυτό και ονομάζονται execution parentheses.</p>
+
+                <p>Όπως ήδη έχουμε αναφέρει, μπορούμε να περάσουμε και παραμέτρους
+                    στην anonymous function. Για να γίνει αυτό πρέπει να περάσουμε
+                    τις μεταβλητές στις execution παρενθέσεις, ενώ στις παρενθέσεις
+                    δίπλα από την λέξη func ορίζουμε πόσες και ποια είδη παραμέτρων
+                    δέχεται το anonymous function.</p>
+
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+<xmp>
+package main
+
+import "fmt"
+
+func main() {
+
+    welcomeMessage:="Welcome to Kassapoglou.github.io/main site"
+
+    func(str string){
+        fmt.Println(str)
+    }(welcomeMessage)
+}
+</xmp>
+</pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+<xmp>
+Welcome to Kassapoglou.github.io/main site
+</xmp>
+</pre>
+
+                <p>Στο παράδειγμα που μόλις εκτελέσαμε, στην anonymous
+                    function func(str string) ορίζουμε ότι θα δέχεται μια παράμετρο
+                    είδος string. Ενώ μέσα στις execution παρενθέσεις ορίζουμε την
+                    τιμή που περνάμε στην anonymous function μέσω της μεταβλητής welcomeMessage.</p>
+
+                <p>Τα παραδείγματα που έχουμε δει μέχρι τώρα, ορίζουν μια anonymous function
+                    και αμέσως μετά την εκτελούν. Δεν είναι όμως απαραίτητο να ακολουθήσουμε
+                    αυτή τη διαδικασία. Μπορούμε να αναθέσουμε το αποτέλεσμα μιας anonymous
+                    function σε μια μεταβλητή έτσι ώστε να την χρησιμοποιήσουμε αργότερα
+                    στον κώδικα μας.</p>
+
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+    <xmp>
+package main
+
+import (
+    "fmt"
+    "reflect"
+)
+
+func main() {
+    x:=func(){
+        fmt.Println("This is an anonymous function")
+    }
+    fmt.Println("Retrieving type of x:")
+    fmt.Println(reflect.TypeOf(x))
+    fmt.Println("Retrieving value of x:")
+    x()
+}
+        
+    </xmp>
+    </pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+    <xmp>
+Retrieving type of x:
+func()
+Retrieving value of x:
+This is an anonymous function
+    </xmp>
+    </pre>
+
+                <p>Αναθέτουμε το αποτέλεσμα της anonymous function σε μια μεταβλητή x. Η
+                    μεταβλητή x είναι είδος func( ) και αυτό άλλωστε επιβεβαιώνουμε καλώντας
+                    την fmt.Println(reflect.TypeOf(x)). Αφού λοιπόν η μεταβλητή x είναι
+                    είδος func( ) τότε για να καλέσουμε την function θα πρέπει να βάλουμε
+                    και τις παρενθέσεις όπως κάνουμε και σε κανονικές functions με όνομα.</p>
+
+                <p>Τώρα που έχουμε μια καλύτερη κατανόηση για το τι είναι anonymous
+                    functions μπορούμε να προχωρήσουμε σε μια πιο δυνατή ιδιότητα των
+                    anonymous functions που ονομάζεται closure. Closure είναι μια ειδική
+                    μορφή anonymous function που έχει την δυνατότητα να αναφέρεται σε
+                    μεταβλητές που δεν είναι ορισμένες τοπικά στο anonymous function. Αν
+                    δηλαδή έχουμε ορίσει στο επίπεδο της func main( ) μερικές μεταβλητές
+                    και ένα closure, τότε το closure έχει πρόσβαση σε αυτές τις μεταβλητές
+                    χωρίς μάλιστα να χρειάζεται να τις ορίσουμε σαν παραμέτρους στην
+                    anonymous function.</p>
+
+
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+        <xmp>
+package main
+
+import "fmt"
+
+func main() {
+    i:=0
+    increment := func()int{
+        i+=1
+        return i
+    }
+    fmt.Println(increment())
+    fmt.Println(increment())
+    i+=10
+    fmt.Println(increment())
+}
+            
+        </xmp>
+        </pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+        <xmp>
+1
+2
+13
+        </xmp>
+        </pre>
+
+                <p>Στην αρχή ορίζουμε μια μεταβλητή i να έχει τιμή 0. Αναθέτουμε
+                    μια anonymous function σε μια καινούργια μεταβλητή με το όνομα
+                    increment. Η anonymous function αυξάνει την τιμή του i κατά μια
+                    μονάδα και την επιστρέφει πίσω στο πρόγραμμα. Αξίζει να παρατηρήσετε
+                    ότι δεν έχουμε ορίσει input παραμέτρους στην anonymous function. Έπειτα
+                    τυπώνουμε το αποτέλεσμα και παίρνουμε τους αριθμούς 1 και 2. </p>
+
+                <p>Το επόμενο βήμα είναι να αυξήσουμε την τιμή του i κατά 10 αλλά όχι
+                    χρησιμοποιώντας την anonymous function. Εδώ όμως είναι που βλέπουμε
+                    πως υπάρχει πρόβλημα. Όταν εκτελούμε πάλι την anonymous function θα
+                    επιθυμούσαμε το αποτέλεσμα να είναι 3 και όχι 13. </p>
+
+                <p>Βλέποντας τον κώδικα, πολύ εύκολα αναγνωρίζουμε το γεγονός ότι
+                    οποιοδήποτε μέρος του κώδικα μέσα στην main function έχει πρόσβαση
+                    στο i. Αυτό που πραγματικά θα θέλουμε να πετύχουμε είναι η μεταβλητή
+                    increment να είναι ο μόνος επιτρεπτός τρόπος να αλλάξει η τιμή
+                    του i. Στην ουσία θέλουμε να προστατέψουμε το i από οποιαδήποτε
+                    άλλη anonymous function ή κώδικα να μπορεί να αλλάξει την τιμή του.</p>
+
+                <p>Αλλάζουμε λοιπόν τον κώδικα του προηγούμενου παραδείγματος σε αυτό:</p>
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+<xmp>
+package main
+
+import "fmt"
+
+func increment() func() int{
+    i := 0
+    return func() int {
+        i +=1
+        return i
+    }
+}
+
+func main() {
+    increase :=increment()
+    fmt.Println(increase())
+    fmt.Println(increase())
+    fmt.Println(increase())
+}   
+</xmp>
+</pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+<xmp>
+1
+2
+3 
+</xmp>
+</pre>
+
+                <p>Ορίζουμε λοιπόν μια function με το όνομα increment( ) ή οποία
+                    επιστρέφει ένα anonymous function είδος int. Τώρα ορίζουμε μια
+                    μεταβλητή i μέσα στην increment( ) function σε αντίθεση με το
+                    προηγούμενο πρόγραμμα όπου είχαμε ορίσει την i σε επίπεδο main( ). Με
+                    αυτή την αλλαγή μόνο η function increment έχει πρόσβαση στην i μεταβλητή.</p>
+
+                <p>Η function increment( ) επιστρέφει λοιπόν μια anonymous function της
+                    οποία ο κώδικας αυξάνει την τιμή του i κατά 1 και μετά μας επιστρέφει
+                    την int τιμή της μεταβλητής. Για αυτό άλλωστε ορίσαμε ότι η function
+                    increment( ) θα μας επιστρέφει μια anonymous function με int data type.</p>
+
+                <p>Το πιο σημαντικό βήμα στον καινούργιο μας κώδικα είναι η
+                    γραμμή increase := increment( ). Εδώ, αυτό που γίνεται στην
+                    πραγματικότητα, είναι η ανάθεση του func( ) int σε μια μεταβλητή. Η
+                    increment( ) εκτελείται μόνο μια φορά και αυτή είναι εδώ για να
+                    αναθέσει την func( ) int στην μεταβλητή. Κατά την εκτέλεση του κώδικα
+                    μας, και καλείται καμία άλλη φορά.</p>
+
+                <p>Τώρα η increase είναι είδος func( ) int. Κάθε φορά που
+                    καλούμε την increase( ) στην πραγματικότητα εκτελείται ο κώδικας
+                    της anonymous function. </p>
+
+
+
+                <a><a href="https://kassapoglou.github.io/go/go-programming.html">
+                        <font color="#0000CC">Πίσω στις ενότητες GO Programming</font>
+                    </a></a>
+
+
+
+                <div class="author-box">
+                    <div class="author-info flex flex-wrap">
+                        <div class="author-avatar">
+                            <img src="images/michail.jpg" alt="Michail Kassapoglou">
+
+
+                        </div><!-- .author-avatar -->
+
+                        <div class="author-details">
+                            <h3 class="author-name">Michail Kassapoglou <span>Admin</span></h3>
+
+                            <div class="entry-content mt-3">
+                                <p>Γεια σας, είμαι ο Μιχάλης Κασάπογλου και θα σας διδάξω με τον ποιο απλό
+                                    τρόπο να προγραμματίζετε σε Python. Ασχολούμαι με την τεχνική εκπαίδευση
+                                    σε διάφορες πλατφόρμες, λειτουργικά συστήματα και γλώσσες προγραμματισμού
+                                    πάνω από 20 έτη. Κατέχω έναν αρκετά μεγάλο αριθμό πιστοποιήσεων
+                                    και σαν Τraining Lead στην Intrasoft έχω την δυνατότητα να αναβαθμίζω
+                                    συνεχώς
+                                    τις γνώσεις μου και να έχω άμεση επαφή με αληθινά projects και
+                                    εξειδικευμένες
+                                    μεθόδους
+                                    ανάπτυξης εφαρμογών που έχουν υψηλές απαιτήσεις.
+                                    Για τυχόν ερωτήσεις σας μπορείτε να επικοινωνήσετε μαζί μου
+                                    στο <font color="#0000CC">Michail.Kassapoglou@gmail.com </font>
+                                </p>
+                                <p> Σας ευχαριστώ που επισκεφτήκατε τα δωρεάν μαθήματα προγραμματισμού GO.</p>
+                            </div><!-- .entry-content -->
+                        </div><!-- .author-details -->
+                    </div><!-- .author-info -->
+                </div><!-- .author-box -->
+
+
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+
+
+
+
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+
+</html>
