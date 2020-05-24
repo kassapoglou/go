@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Μαθαίνω Δωρεάν Go Προγραμματισμό</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line σεμιναρίων στην γλώσσα προγραμματισμού Go">
+    <meta name="robots" content="index, follow">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="go_style.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150900548-1');
+    </script>
+
+</head>
+
+<body class="single-blog-post">
+    <div class="page-header">
+        <header class="site-header">
+            <div class="top-header-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div
+                            class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                            <div class="header-bar-email d-flex align-items-center">
+                                <i class="fa fa-envelope"></i><a href="#">michail.kassapoglou@gmail.com</a>
+                            </div><!-- .header-bar-email -->
+
+                            <div class="header-bar-text lg-flex align-items-center">
+                                <!--  <p><i class="fa fa-phone"></i>001-1234-88888 </p> -->
+                            </div><!-- .header-bar-text -->
+                        </div><!-- .col -->
+
+                        <div
+                            class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                            <div class="header-bar-search">
+                                <form class="flex align-items-stretch">
+                                    <!--   <input type="search" placeholder="What would you like to learn?"> -->
+                                    <!--   <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button> -->
+                                </form>
+                            </div><!-- .header-bar-search -->
+
+                            <div class="header-bar-menu">
+                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
+                                    <!--  <li><a href="#">Register</a></li> -->
+                                    <!--    <li><a href="#">Login</a></li> -->
+                                </ul>
+                            </div><!-- .header-bar-menu -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div> <!-- .container-fluid -->
+            </div><!-- .top-header-bar -->
+
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-3">
+                            <div class="site-branding">
+                                <h1 class="site-title"><a href="https://kassapoglou.github.io/main/"
+                                        rel="home">Kassa<span>poglou</span></a></h1>
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
+
+                        <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                            <nav class="site-navigation flex justify-content-end align-items-center">
+                                <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                    <li class="current-menu-item"><a href="index.html">Home</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main">ΑΡΧΙΚΗ</a></li>
+                                    <li><a href="https://kassapoglou.github.io/go/go-programming.html">GOLANG</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main/contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                                </ul>
+
+                                <div class="hamburger-menu d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div><!-- .hamburger-menu -->
+
+
+                            </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+
+        <div class="page-header-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <header class="entry-header">
+                            <h1 class="entry-title">ΕΝΟΤΗΤΑ 13 GO - Funtions (Part 3)</h1>
+
+                            <div class="entry-meta flex justify-content-center align-items-center">
+                                <div class="post-author"><a href="#">Michail Kassapoglou </a></div>
+
+                                <!--  <div class="post-comments"><a href="#">02 Comments</a></div> -->
+                            </div><!-- .entry-meta -->
+                        </header><!-- .entry-header -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .page-header-overlay -->
+    </div><!-- .page-header -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-10">
+                <div class="featured-image">
+                    <!--  <img src="images/single-post.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια PYTHON"> -->
+
+                    <div class="posted-date position-absolute">
+                        <div class="day">24</div>
+                        <div class="month">May</div>
+                    </div><!-- .posted-date -->
+                </div><!-- .featured-image -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-1" style="height:0">
+                <div class="post-share">
+
+
+
+                </div><!-- .post-share -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-12">
+                <div class="single-post-wrap">
+
+                </div><!-- .single-post-wrap -->
+
+                <p>
+                    <h3>ΔΩΡΕΑΝ ΜΑΘΗΜΑΤΑ GO</h3>
+                </p>
+                <img src="images/Golang.png" alt="Δωρεάν Μαθήματα και Σεμινάρια GO" class="center">
+                <p></p>
+                <p>Στο σημερινό δωρεάν μάθημα GO θα δούμε μιλήσουμε λίγο περισσότερο
+                    για το πως χρησιμοποιούμε τα functions σαν data types ή types γενικότερα, πως
+                    λειτουργεί ένα defer statement και τέλος πως ορίζονται τα recursive functions. </p>
+
+                <p>Όπως ήδη γνωρίζουμε από την μικρή μας περιήγηση μέχρι τώρα στο documentation
+                    της GO, υπάρχουν πολλά functions που μας προσφέρονται έτοιμα από την ίδια την
+                    γλώσσα για να μας διευκολύνουν στην ανάπτυξη του κώδικα μας. Γενικότερα στην
+                    GO, τα functions θεωρούνται και χρησιμοποιούνται σαν types ακριβώς με τον ίδιο
+                    τρόπο όπως χρησιμοποιείτε και το int, string και bool types. Αυτή η ιδιότητα
+                    των functions μας δίνει την ικανότητα να περάσουμε functions σαν παραμέτρους
+                    σε άλλα functions, να επιστρέφουμε function σαν αποτέλεσμα καλώντας ένα άλλο
+                    function, και να αναθέτουμε functions σε μεταβλητές. Μπορούμε επίσης και να
+                    δημιουργήσουμε τα δικά μας function types αν το επιθυμούμε. </p>
+
+                <p>Όλα αυτά ορίζονται από το signature του function. Εκεί καθορίζουμε το function type που δέχεται μια
+                    function όπως το είδος των δεδομένων που θα επιστραφούν. Ας δούμε ένα απλό παράδειγμα για να
+                    κατανοήσουμε λίγο καλύτερα την έννοια του type.
+                </p>
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+<xmp>
+package main
+
+import "fmt"
+
+type calc func(int, int)string
+
+func main() {
+    calculator(add, 5, 6)
+}
+
+func add(i, j int)string{
+    result:=i+j
+    return fmt.Sprintf("Added %d + %d = %d", i, j, result)
+}
+
+func calculator(f calc, i, j int){
+    fmt.Println(f(i,j))
+}
+</xmp>
+</pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+<xmp>
+Added 5 + 6 = 11
+</xmp>
+</pre>
+
+                <p>Ο κώδικας μας ξεκινάει με το να ορίζει μια μεταβλητή calc να είναι type func το οποίο δέχεται
+                    δύο int τιμές και επιστρέφει ένα string.</p>
+
+                <p>Μετά ορίζουμε μια function με το όνομα add η οποία έχει ακριβώς το
+                    ίδιο signature όπως και το type calc. Δηλαδή δέχεται δύο int τιμές και
+                    επιστέφει ένα string. Αυτό είναι απαραίτητη προϋπόθεση όταν ορίζουμε type
+                    μεταβλητές κάποιου function. Πρέπει το signature της function που θα
+                    ορίσουμε να είναι ίδιο με εκείνο της type μεταβλητής.</p>
+
+                <p>Μετά ορίζουμε το function calculator όπου περνάμε το calc σαν
+                    input παράμετρο μαζί με τις int παραμέτρους i και j. Αυτή είναι
+                    μια ακόμα ιδιότητα των functions – μπορούμε να περάσουμε μια function
+                    σαν παράμετρο σε μια άλλη function. Οποιαδήποτε function ταιριάζει στο
+                    signature με την calc μπορούμε να την περάσουμε στην calculator.</p>
+
+                <p>Μέσα στην main function καλούμε την calculator με input τιμές
+                    add, 5, και 6. Στην ουσία περνάμε την add function της οποία το
+                    signature συμφωνεί με εκείνο της calc. Η add function θα προσθέσει
+                    τις τιμές από τα δύο int και θα επιστρέψει ένα Sprintf αποτέλεσμα. Επειδή
+                    η Sprintf δεν τυπώνει άμεσα στο terminal, χρησιμοποιούμε την Println για
+                    αυτό το σκοπό.</p>
+
+                <p>Θα μπορούσαμε όμως αντί να χρησιμοποιήσουμε το type, να περνούσαμε το signature της function σαν
+                    input παράμετρο σε μια άλλη function όπως δείχνει και το παρακάτω παράδειγμα.
+                </p>
+
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+<xmp>
+package main
+
+import "fmt"
+
+func main() {
+    calculator(add, 5, 6)
+    calculator(subtract, 10,5)
+}
+
+func add(i, j int)int{
+    return i+j
+}
+
+func subtract(i, j int)int{
+    return i-j
+}
+</xmp>
+</pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+<xmp>
+11
+5
+</xmp>
+</pre>
+
+                <p>Μια ακόμη ιδιότητα που μπορούμε να προσθέσουμε στις functions είναι
+                    εκείνη της defer. Επειδή είμαι σίγουρος ότι δεν θα καταλάβετε τον ορισμό
+                    από μόνο του, καλύτερα είναι πρώτα να δούμε ένα απλό παράδειγμα και μετά να
+                    αναλύσουμε την συμπεριφορά του προγράμματος μας.</p>
+
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+<xmp>
+package main
+
+import "fmt"
+
+func main() {
+    defer done()
+    fmt.Println("Main: Start")
+    fmt.Println("Main: End")
+}
+func done(){
+    fmt.Println("Now Iam done")
+}
+</xmp>
+</pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+<xmp>
+Main: Start
+Main: End
+Now Iam done
+</xmp>
+</pre>
+
+                <p>Τι ιδιότητα δίνει η defer στην function done? Αν και την έχουμε καλέσει
+                    πρώτη στον κώδικα της main εκείνη θα εκτελεστεί τελευταία, λίγο πριν
+                    ολοκληρωθεί η main. Και αυτή ακριβώς είναι η ιδιότητα που αποκτάει η
+                    function done. Εκτελείται τελευταία λίγο πριν ολοκληρωθεί ο κώδικας
+                    της εξωτερικής function στην οποία ανήκει που στην δική μας περίπτωση
+                    είναι η main. Όπως καταλαβαίνετε οι defer functions είναι ιδανικές για
+                    να καθαρίσουμε βάσεις, αρχεία κτλ μετά το πέρας εκτέλεσης κάποιας εργασίας.</p>
+
+                <p>Πριν κλείσουμε και αυτή την ενότητα που ολοκληρώνει την αναφορά μας στα
+                    functions, καλό θα ήταν να μιλήσουμε και για τα recursive functions. Ένα recursive
+                    function είναι ικανό να καλέσει τον εαυτό του άπειρες φορές ή μέχρι κάποια συνθήκη
+                    που έχουμε ορίσει να γίνει true. Ο τρόπος που ορίζουμε recursive functions είναι να
+                    καλέσει μια function τον εαυτό της καλώντας το όνομα της στο return statement.</p>
+
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+    <xmp>
+package main
+
+import "fmt"
+
+func feedMe(portion int, eaten int)int{
+    eaten = portion + eaten
+    if eaten >=5{
+        fmt.Printf("I am full! I've eaten %d\n", eaten)
+        return eaten
+    }
+    fmt.Printf("I'm still hungry! I've eaten %d\n", eaten)
+    return feedMe(portion, eaten)
+}
+
+func main() {
+    fmt.Println(feedMe(1,0))
+}
+    </xmp>
+    </pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+    <xmp>
+I'm still hungry! I've eaten 1
+I'm still hungry! I've eaten 2
+I'm still hungry! I've eaten 3
+I'm still hungry! I've eaten 4
+I am full! I've eaten 5
+5
+        
+    </xmp>
+    </pre>
+
+                <p>Σε αυτό το παράδειγμα, το πιο σημαντικό σημείο είναι η τελευταία γραμμή
+                    κώδικα μέσα στην function feedMe. Αντί να επιστρέψει μια τιμή, καλεί τον
+                    εαυτό της για να εκτελεστεί πάλι. Αυτό θα συνεχιστεί για πάντα εκτός και αν
+                    ορίσουμε κάποια συνθήκη που θα σταματήσει αυτή την συνεχόμενη ενέργεια. Εδώ η
+                    συνθήκη μας είναι όταν η μεταβλητή eaten φτάσει την τιμή 5 ο κώδικας μας να μας
+                    επιστρέψει την τιμή και το πρόγραμμα να σταματήσει την εκτέλεση του.</p>
+
+
+
+                <a><a href="https://kassapoglou.github.io/go/go-programming.html">
+                        <font color="#0000CC">Πίσω στις ενότητες GO Programming</font>
+                    </a></a>
+
+
+
+                <div class="author-box">
+                    <div class="author-info flex flex-wrap">
+                        <div class="author-avatar">
+                            <img src="images/michail.jpg" alt="Michail Kassapoglou">
+
+
+                        </div><!-- .author-avatar -->
+
+                        <div class="author-details">
+                            <h3 class="author-name">Michail Kassapoglou <span>Admin</span></h3>
+
+                            <div class="entry-content mt-3">
+                                <p>Γεια σας, είμαι ο Μιχάλης Κασάπογλου και θα σας διδάξω με τον ποιο απλό
+                                    τρόπο να προγραμματίζετε σε Python. Ασχολούμαι με την τεχνική εκπαίδευση
+                                    σε διάφορες πλατφόρμες, λειτουργικά συστήματα και γλώσσες προγραμματισμού
+                                    πάνω από 20 έτη. Κατέχω έναν αρκετά μεγάλο αριθμό πιστοποιήσεων
+                                    και σαν Τraining Lead στην Intrasoft έχω την δυνατότητα να αναβαθμίζω
+                                    συνεχώς
+                                    τις γνώσεις μου και να έχω άμεση επαφή με αληθινά projects και
+                                    εξειδικευμένες
+                                    μεθόδους
+                                    ανάπτυξης εφαρμογών που έχουν υψηλές απαιτήσεις.
+                                    Για τυχόν ερωτήσεις σας μπορείτε να επικοινωνήσετε μαζί μου
+                                    στο <font color="#0000CC">Michail.Kassapoglou@gmail.com </font>
+                                </p>
+                                <p> Σας ευχαριστώ που επισκεφτήκατε τα δωρεάν μαθήματα προγραμματισμού GO.</p>
+                            </div><!-- .entry-content -->
+                        </div><!-- .author-details -->
+                    </div><!-- .author-info -->
+                </div><!-- .author-box -->
+
+
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+
+
+
+
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+
+</html>
