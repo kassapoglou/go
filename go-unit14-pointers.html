@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Μαθαίνω Δωρεάν Go Προγραμματισμό</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line σεμιναρίων στην γλώσσα προγραμματισμού Go">
+    <meta name="robots" content="index, follow">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="go_style.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150900548-1');
+    </script>
+
+</head>
+
+<body class="single-blog-post">
+    <div class="page-header">
+        <header class="site-header">
+            <div class="top-header-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div
+                            class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                            <div class="header-bar-email d-flex align-items-center">
+                                <i class="fa fa-envelope"></i><a href="#">michail.kassapoglou@gmail.com</a>
+                            </div><!-- .header-bar-email -->
+
+                            <div class="header-bar-text lg-flex align-items-center">
+                                <!--  <p><i class="fa fa-phone"></i>001-1234-88888 </p> -->
+                            </div><!-- .header-bar-text -->
+                        </div><!-- .col -->
+
+                        <div
+                            class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                            <div class="header-bar-search">
+                                <form class="flex align-items-stretch">
+                                    <!--   <input type="search" placeholder="What would you like to learn?"> -->
+                                    <!--   <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button> -->
+                                </form>
+                            </div><!-- .header-bar-search -->
+
+                            <div class="header-bar-menu">
+                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
+                                    <!--  <li><a href="#">Register</a></li> -->
+                                    <!--    <li><a href="#">Login</a></li> -->
+                                </ul>
+                            </div><!-- .header-bar-menu -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div> <!-- .container-fluid -->
+            </div><!-- .top-header-bar -->
+
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-3">
+                            <div class="site-branding">
+                                <h1 class="site-title"><a href="https://kassapoglou.github.io/main/"
+                                        rel="home">Kassa<span>poglou</span></a></h1>
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
+
+                        <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                            <nav class="site-navigation flex justify-content-end align-items-center">
+                                <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                    <li class="current-menu-item"><a href="index.html">Home</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main">ΑΡΧΙΚΗ</a></li>
+                                    <li><a href="https://kassapoglou.github.io/go/go-programming.html">GOLANG</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main/contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                                </ul>
+
+                                <div class="hamburger-menu d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div><!-- .hamburger-menu -->
+
+
+                            </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+
+        <div class="page-header-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <header class="entry-header">
+                            <h1 class="entry-title">ΕΝΟΤΗΤΑ 14 GO - Pointers</h1>
+
+                            <div class="entry-meta flex justify-content-center align-items-center">
+                                <div class="post-author"><a href="#">Michail Kassapoglou </a></div>
+
+                                <!--  <div class="post-comments"><a href="#">02 Comments</a></div> -->
+                            </div><!-- .entry-meta -->
+                        </header><!-- .entry-header -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .page-header-overlay -->
+    </div><!-- .page-header -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-10">
+                <div class="featured-image">
+                    <!--  <img src="images/single-post.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια PYTHON"> -->
+
+                    <div class="posted-date position-absolute">
+                        <div class="day">28</div>
+                        <div class="month">May</div>
+                    </div><!-- .posted-date -->
+                </div><!-- .featured-image -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-1" style="height:0">
+                <div class="post-share">
+
+
+
+                </div><!-- .post-share -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-12">
+                <div class="single-post-wrap">
+
+                </div><!-- .single-post-wrap -->
+
+                <p>
+                    <h3>ΔΩΡΕΑΝ ΜΑΘΗΜΑΤΑ GO</h3>
+                </p>
+                <img src="images/Golang.png" alt="Δωρεάν Μαθήματα και Σεμινάρια GO" class="center">
+                <p></p>
+                <p>Στο σημερινό δωρεάν μάθημα GO θα εξηγήσουμε μέσα από απλά παραδείγματα
+                    τι ακριβώς είναι οι pointers στην GO και πως τους χρησιμοποιούμε με μεταβλητές
+                    αλλά και με functions.</p>
+
+                <p>Πριν όμως μιλήσουμε για τους pointers, πρέπει να κατανοήσουμε πως
+                    συμπεριφέρεται η GO χωρίς αυτούς. Όταν έχουμε τιμές, είδους int, bool ή
+                    ακόμα και string, τις οποίες περνάμε σε ένα function, η GO παίρνει ένα αντίγραφο
+                    αυτών των τιμών και τις χρησιμοποιεί. Αντίγραφο σημαίνει ότι όποιες αλλαγές και
+                    αν κάνει εσωτερικά η function στην μεταβλητή, η τιμή της αρχικής
+                    μεταβλητής (εκτός function) παραμένει αναλλοίωτη. </p>
+
+                <p>Περνώντας τιμές σε μια function με αυτό τον τρόπο, μας επιφέρει λιγότερα
+                    λάθη στην ανάπτυξη του κώδικα μας. Επίσης η GO χρησιμοποιεί ένα υποσύνολο της
+                    μνήμης που ονομάζεται stack για να διαχειριστεί τα αντίγραφα των τιμών. Το αρνητικό
+                    όμως σε αυτή την προσέγγιση είναι ότι καθώς η μια function καλεί μια άλλη
+                    αντιγράφονται οι τιμές και χρησιμοποιείται όλο και περισσότερη μνήμη. Σε μεγάλα
+                    πολύπλοκα εταιρικά προγράμματα υπάρχουν αρκετές δεκάδες functions που καλεί η μια
+                    την άλλη. Το συμπέρασμα είναι ότι πολλές φορές χρησιμοποιούμε περισσότερη μνήμη από
+                    ότι χρειαζόμαστε.</p>
+
+                <p>Υπάρχει μια εναλλακτική προσέγγιση σε αυτό το πρόβλημα που χρησιμοποιεί
+                    λιγότερη μνήμη και ονομάζεται pointer. Αντί να περνάμε μια τιμή στην function
+                    περνάμε την τοποθεσία της μνήμης στην οποία βρίσκεται η τιμή. Ο pointer δεν έχει
+                    τιμή από μόνος του. Απλά δίνει “οδηγίες” σε αυτούς που το χρησιμοποιούν που να
+                    βρουν την τιμή που χρειάζονται. Το συμπέρασμα σε αυτή την προσέγγιση είναι ότι
+                    δεν δημιουργείται ένα αντίγραφο της τιμής της μεταβλητής. </p>
+
+                <p>Η GO, τους pointers, δεν τους αποθηκεύει στο stack αλλά στο heap. Η περιοχή
+                    της μνήμης που ονομάζεται heap επιτρέπει μια τιμή να υπάρχει αποθηκευμένη εκεί
+                    μέχρι να μην υπάρχει κανένας pointer που να δείχνει σε αυτή. Όταν αυτό γίνει, τότε
+                    μια διαδικασία που ονομάζεται garbage collection και τρέχει σε τακτά χρονικά
+                    διαστήματα, έρχεται να καθαρίσει τις τιμές. Σε αυτή την διαδικασία δεν έχουμε
+                    πρόσβαση και ορίζεται εξ ολοκλήρου από το σύστημα. Οπότε, εκτός από ότι γνωρίζουμε
+                    ότι υπάρχει, δεν θα απασχολήσει ξανά.</p>
+
+                <p>Οι pointers γενικότερα μας βοηθάνε στο να δημιουργήσουμε καλύτερο κώδικα
+                    αν χρησιμοποιηθούν σωστά. Για παράδειγμα, μπορούμε πολύ εύκολα να ανακαλύψουμε εάν
+                    μια μεταβλητή περιέχει τιμή ή όχι ελέγχοντας εάν ο pointer είναι nil. Η τιμή nil
+                    είναι ένα ειδικό type στην GO που περιγράφει την κατάσταση μιας μεταβλητής όταν
+                    δεν περιέχει καμία τιμή. Συνήθως για να αποφύγουμε τυχόν λάθη στην εκτέλεση του
+                    προγράμματος μας κάνουμε τον εξής έλεγχο: <strong>
+                        <pointer> != nil</pointer>.</p>
+
+                <p>Για να δημιουργήσουμε ένα pointer έχουμε αρκετές επιλογές. Η πρώτη είναι να
+                    δηλώσουμε μια μεταβλητή να είναι είδος pointer χρησιμοποιώντας την λέξη κλειδί var, μετά
+                    το όνομα της μεταβλητής και αμέσως μετά τον αστερίσκο <strong>*</strong> με το όνομα του type. Για
+                    παράδειγμα <strong> var myPointer *int</strong>. H αρχική τιμή της μεταβλητής pointer που ορίζεται
+                    με αυτό τον τρόπο είναι <strong>nil</strong>. Για να αναθέσουμε τον pointer που δημιουργήσαμε σε
+                    μια μεταβλητή χρησιμοποιούμε το <strong>&</strong> όπως <strong>var1 := &var2</strong>. Τέλος
+                    τυπώνοντας τον pointer
+                    θα δούμε την διεύθυνση της μνήμης στην οποία δείχνει ο pointer ενώ την τιμή στην
+                    οποία δείχνει ο pointer μπορούμε να την λάβουμε χρησιμοποιώντας *pointerName. Ας
+                    δούμε πως λειτουργεί αυτός ο τρόπος με ένα απλό παράδειγμα.</p>
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+<xmp>
+package main
+
+import "fmt"
+
+func main(){
+    var myVariable int = 3
+    var myPointer *int
+    myPointer = &myVariable
+    fmt.Println(myPointer)
+    fmt.Println(*myPointer)
+    *myPointer = 5
+    fmt.Println(*myPointer)
+    fmt.Println(myVariable)
+    }
+</xmp>
+</pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+<xmp>
+0xc0000180b0
+3
+5
+5
+</xmp>
+</pre>
+
+                <p>Σε αυτό το απλό παράδειγμα, δημιουργήσαμε μια int μεταβλητή με το όνομα
+                    myVariable και της αναθέσαμε την τιμή 3. Επίσης, δημιουργήσαμε έναν pointer είδος
+                    int με το όνομα myPointer. Μετά αναθέσαμε την μεταβλητή στον pointer. Τώρα μπορούμε
+                    να δείχνουμε με το όνομα του pointer την τοποθεσία της μνήμης που βρίσκεται η
+                    τιμή, ή αν βάλουμε μπροστά από το όνομα τον αστερίσκο (*) μπορούμε να δείχνουμε
+                    στην ίδια την τιμή. Αλλάζουμε την τιμή του pointer σε 5. Αυτό φυσικά επηρεάζει
+                    εκτός από τον pointer και την ίδια την μεταβλητή αφού ο pointer δείχνει σε αυτή.</p>
+
+                <p>Ο δεύτερος τρόπος για να ορίσουμε έναν pointer είναι να χρησιμοποιήσουμε
+                    την new function που μας προσφέρει η GO. Αυτή η function επιστρέφει μια διεύθυνση
+                    της μνήμης για οποιοδήποτε type του ορίσουμε. Ο γενικός κανόνας είναι
+                    variable :=new(type). Ας το δούμε σε ένα απλό παράδειγμα.</p>
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+    <xmp>
+package main
+
+import "fmt"
+
+func main(){
+    var myVariable int = 3
+    myPointer :=new(int)
+    myPointer = &myVariable
+    fmt.Println(myPointer)
+    fmt.Println(*myPointer)
+    *myPointer = 5
+    fmt.Println(*myPointer)
+    fmt.Println(myVariable)
+}
+    </xmp>
+    </pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+    <xmp>
+0xc0000180b0
+3
+5
+5
+    </xmp>
+    </pre>
+
+                <p>Ο τρίτος τρόπος να ορίσουμε έναν pointer είναι από μια υπάρχουσα
+                    μεταβλητή χρησιμοποιώντας το &. Ας δούμε και αυτό τον τρόπο.</p>
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+<xmp>
+package main
+
+import "fmt"
+
+func main(){
+    var myVariable int = 3
+    myPointer := &myVariable
+    fmt.Println(myPointer)
+    fmt.Println(*myPointer)
+    *myPointer = 5
+    fmt.Println(*myPointer)
+    fmt.Println(myVariable)
+}
+</xmp>
+</pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+<xmp>
+0xc0000180b0
+3
+5
+5
+</xmp>
+</pre>
+
+                <p>Όπως ήδη έχουμε αναφέρει, είναι συνηθισμένο λάθος να προσπαθήσουμε να
+                    τυπώσουμε κάποια τιμή στην οποία υποθέτουμε ότι δείχνει ένας pointer αλλά στην
+                    ουσία η τιμή του είναι nil. Για αυτό το λόγο, είναι φρόνιμο και κοινή πρακτική
+                    από τους προγραμματιστές της GO να κάνουν πρώτα ένα μικρό έλεγχο για την κατάσταση
+                    του pointer πριν ζητήσουμε κάποιες τιμές.</p>
+
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+<xmp>
+package main
+
+import "fmt"
+
+func main(){
+    var myVariable int = 3
+    myPointer := &myVariable
+    if myPointer != nil {
+        fmt.Println(*myPointer)
+    }
+    *myPointer = 5
+    if myPointer != nil {
+        fmt.Println(*myPointer)
+        fmt.Println(myVariable)
+    }
+}
+</xmp>
+</pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+<xmp>
+3
+5
+5
+</xmp>
+</pre>
+
+                <p>Αφού έχουμε αποκτήσει μια μικρή εμπειρία στο πως λειτουργούν οι
+                    pointers, ας τους δούμε τώρα σε συνδυασμό με τα functions. Στο παρακάτω
+                    παράδειγμα, δημιουργούμε δύο functions. Η πρώτη function δέχεται έναν αριθμό
+                    μέσω μιας μεταβλητής (τον συνηθισμένο τρόπο), προσθέτει τον αριθμό 10, και μετά
+                    τυπώνει το αποτέλεσμα στην κονσόλα. Η δεύτερη function δέχεται έναν
+                    pointer, προσθέτει 10 και μετά τυπώνει το αποτέλεσμα στην κονσόλα. Μετά το
+                    τέλος της εκτέλεσης της κάθε function, τυπώνουμε την τιμή της αρχικής μεταβλητής
+                    για να δούμε πως η κάθε function την έχει επηρεάσει. </p>
+
+
+                <p><strong>main.go</strong></p>
+                <pre class="prettyprint">
+<xmp>
+package main
+
+import "fmt"
+
+func main(){
+    var mainVariable int
+    changeValue(mainVariable)
+    fmt.Println("mainVariable is: ", mainVariable)
+    changeValuePointer(&mainVariable)
+    fmt.Println("mainVariable is: ", mainVariable)
+}
+
+func changeValue(myVar int){
+    myVar += 10
+    fmt.Println("from changeValue")
+    fmt.Println("myVar value is :", myVar)
+}
+
+func changeValuePointer(myVar *int){
+    *myVar += 10
+    fmt.Println("from changeValuePointer")
+    fmt.Println("myVar value is :", *myVar)
+}
+    </xmp>
+</pre>
+
+                <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+<xmp>
+from changeValue
+myVar value is : 10
+mainVariable is:  0
+from changeValuePointer
+myVar value is : 10
+mainVariable is:  10 
+</xmp>
+</pre>
+
+
+                <a><a href="https://kassapoglou.github.io/go/go-programming.html">
+                        <font color="#0000CC">Πίσω στις ενότητες GO Programming</font>
+                    </a></a>
+
+
+
+                <div class="author-box">
+                    <div class="author-info flex flex-wrap">
+                        <div class="author-avatar">
+                            <img src="images/michail.jpg" alt="Michail Kassapoglou">
+
+
+                        </div><!-- .author-avatar -->
+
+                        <div class="author-details">
+                            <h3 class="author-name">Michail Kassapoglou <span>Admin</span></h3>
+
+                            <div class="entry-content mt-3">
+                                <p>Γεια σας, είμαι ο Μιχάλης Κασάπογλου και θα σας διδάξω με τον ποιο απλό
+                                    τρόπο να προγραμματίζετε σε Python. Ασχολούμαι με την τεχνική εκπαίδευση
+                                    σε διάφορες πλατφόρμες, λειτουργικά συστήματα και γλώσσες προγραμματισμού
+                                    πάνω από 20 έτη. Κατέχω έναν αρκετά μεγάλο αριθμό πιστοποιήσεων
+                                    και σαν Τraining Lead στην Intrasoft έχω την δυνατότητα να αναβαθμίζω
+                                    συνεχώς
+                                    τις γνώσεις μου και να έχω άμεση επαφή με αληθινά projects και
+                                    εξειδικευμένες
+                                    μεθόδους
+                                    ανάπτυξης εφαρμογών που έχουν υψηλές απαιτήσεις.
+                                    Για τυχόν ερωτήσεις σας μπορείτε να επικοινωνήσετε μαζί μου
+                                    στο <font color="#0000CC">Michail.Kassapoglou@gmail.com </font>
+                                </p>
+                                <p> Σας ευχαριστώ που επισκεφτήκατε τα δωρεάν μαθήματα προγραμματισμού GO.</p>
+                            </div><!-- .entry-content -->
+                        </div><!-- .author-details -->
+                    </div><!-- .author-info -->
+                </div><!-- .author-box -->
+
+
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+
+
+
+
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+
+</html>
